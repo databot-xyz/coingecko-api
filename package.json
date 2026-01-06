@@ -1,0 +1,10 @@
+{
+  "name": "coingecko-api",
+  "version": "1.0.0",
+  "scripts": {
+    "scrape": "node scripts/scrapeCoingecko.js"
+  },
+  "dependencies": {
+    "puppeteer": "^23.0.0"
+  }
+}

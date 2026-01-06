@@ -7,7 +7,7 @@ function sleep(ms) {
 }
 
 const START_PAGE = 1;
-const MAX_PAGE = 1;
+const MAX_PAGE = 100;
 const BASE_URL = "https://www.coingecko.com/en";
 
 async function scrapeOnePage(page, pageNumber, scrapeTimestamp) {
@@ -20,7 +20,7 @@ async function scrapeOnePage(page, pageNumber, scrapeTimestamp) {
     timeout: 60000,
   });
 
-  await sleep(4000);
+  await sleep(2000);
 
   const tableSelector = "table.gecko-homepage-coin-table tbody tr";
 
@@ -77,20 +77,7 @@ async function scrapeOnePage(page, pageNumber, scrapeTimestamp) {
           market_cap_rank: null,
           fully_diluted_variation: null,
           total_volume: null,
-          high_24h: null,
-          low_24h: null,
-          price_change_24h: null,
           price_change_percentage_24h: null,
-          market_cap_change_24h: null,
-          market_cap_change_percentage_24h: null,
-          circulating_supply: null,
-          total_supply: null,
-          max_supply: null,
-          atl: null,
-          atl_change_percentage: null,
-          roi_times: null,
-          roi_currency: null,
-          roi_percentage: null,
           last_updated: scrapeTimestamp,
         };
 

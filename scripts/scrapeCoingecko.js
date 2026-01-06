@@ -7,7 +7,7 @@ function sleep(ms) {
 }
 
 const START_PAGE = 1;
-const MAX_PAGE = 100;
+const MAX_PAGE = 1;
 const BASE_URL = "https://www.coingecko.com/en";
 
 async function scrapeOnePage(page, pageNumber, scrapeTimestamp) {

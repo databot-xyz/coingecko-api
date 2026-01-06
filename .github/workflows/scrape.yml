@@ -23,10 +23,10 @@ jobs:
       - name: Run scraper
         run: npm run scrape
 
-      - name: Commit and push JSON
+      - name: Commit JSON (if changed)
         run: |
           git config --local user.name "GitHub Action"
           git config --local user.email "action@github.com"
           git add data/coingecko-homepages-schema.json
-          git commit -m "Update coingecko JSON [ci skip]" || echo "No changes to commit"
-          git push
+          git diff-index --quiet HEAD || git commit -m "Update coingecko JSON [ci skip]"
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} HEAD:main

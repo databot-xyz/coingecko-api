@@ -2,11 +2,15 @@ name: Scrape CoinGecko
 
 on:
   schedule:
-    - cron: '0 * * * *'
+    - cron: '0 */2 * * *'  # Every 2 hours
   workflow_dispatch:
 
 permissions:
   contents: write
+
+concurrency:
+  group: coingecko-scrape
+  cancel-in-progress: true
 
 jobs:
   scrape:
@@ -30,6 +34,13 @@ jobs:
         run: |
           git config --local user.name "GitHub Action"
           git config --local user.email "action@github.com"
+
           git add data/coingecko-homepages-schema.json
-          git diff-index --quiet HEAD || git commit -m "Update coingecko JSON [ci skip]"
-          git push
+
+          if ! git diff-index --quiet HEAD; then
+            git commit -m "Update coingecko JSON [ci skip]"
+            git pull --rebase origin main
+            git push
+          else
+            echo "No changes to commit"
+          fi

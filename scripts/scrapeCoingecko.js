@@ -48,7 +48,7 @@ async function scrapeOnePage(page, pageNumber, scrapeTimestamp) {
         if (!cell) return { text: null, pct: null };
 
         const span = cell.querySelector("span");
-        if (!span) return { text, pct: null };
+        if (!span) return { text: null, pct: null };
 
         const text = span.textContent.trim();
         const rawJson = span.getAttribute("data-json");

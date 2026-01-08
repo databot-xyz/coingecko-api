@@ -9,164 +9,174 @@ function sleep(ms) {
 const START_PAGE = 1;
 const MAX_PAGE = 100;
 const BASE_URL = "https://www.coingecko.com";
+const RESTART_INTERVAL = 20; // Restart browser every 20 pages
 
-async function scrapeOnePage(page, pageNumber, scrapeTimestamp) {
+async function scrapeOnePage(page, pageNumber, scrapeTimestamp, retries = 2) {
   const url = `${BASE_URL}?page=${pageNumber}`;
 
   console.log(`\n=== Scraping page ${pageNumber} → ${url} ===`);
 
-  try {
-    await page.goto(url, {
-      waitUntil: "domcontentloaded",
-      timeout: 60000,
-    });
+  for (let attempt = 1; attempt <= retries + 1; attempt++) {
+    try {
+      await page.goto(url, {
+        waitUntil: "domcontentloaded",
+        timeout: 60000,
+      });
 
-    await sleep(3000); // Increased wait time
+      await sleep(3000); // Increased wait time
 
-    const tableSelector = "table.gecko-homepage-coin-table tbody tr";
+      const tableSelector = "table.gecko-homepage-coin-table tbody tr";
 
-    // Check if table exists
-    const tableExists = await page.evaluate(() => {
-      return !!document.querySelector("table.gecko-homepage-coin-table");
-    });
+      // Check if table exists
+      const tableExists = await page.evaluate(() => {
+        return !!document.querySelector("table.gecko-homepage-coin-table");
+      });
 
-    if (!tableExists) {
-      console.log(`⚠️  Table not found on page ${pageNumber}`);
-      return [];
-    }
+      if (!tableExists) {
+        console.log(`⚠️  Table not found on page ${pageNumber}`);
+        return [];
+      }
 
-    await page.waitForSelector(tableSelector, { timeout: 30000 });
+      await page.waitForSelector(tableSelector, { timeout: 30000 });
 
-    const rows = await page.evaluate(
-      (selector, pageNumber, scrapeTimestamp) => {
-        const trs = Array.from(document.querySelectorAll(selector));
+      const rows = await page.evaluate(
+        (selector, pageNumber, scrapeTimestamp) => {
+          const trs = Array.from(document.querySelectorAll(selector));
 
-        function parsePriceCell(cell) {
-          if (!cell) return { text: null, usd: null };
+          function parsePriceCell(cell) {
+            if (!cell) return { text: null, usd: null };
 
-          const span = cell.querySelector("span");
-          if (!span) return { text: null, usd: null };
+            const span = cell.querySelector("span");
+            if (!span) return { text: null, usd: null };
 
-          const text = span.textContent.trim();
-          const raw = span.getAttribute("data-price-usd");
-          if (!raw) return { text, usd: null };
+            const text = span.textContent.trim();
+            const raw = span.getAttribute("data-price-usd");
+            if (!raw) return { text, usd: null };
 
-          const n = Number(raw);
-          return { text, usd: Number.isNaN(n) ? raw : n };
-        }
-
-        function parsePercentCell(cell) {
-          if (!cell) return { text: null, pct: null };
-
-          const span = cell.querySelector("span");
-          if (!span) return { text: null, pct: null };
-
-          const text = span.textContent.trim();
-          const rawJson = span.getAttribute("data-json");
-          if (!rawJson) return { text, pct: null };
-
-          try {
-            const obj = JSON.parse(rawJson);
-            const v = obj?.usd;
-            const n = Number(v);
-            return { text, pct: Number.isNaN(n) ? v : n };
-          } catch {
-            return { text, pct: null };
+            const n = Number(raw);
+            return { text, usd: Number.isNaN(n) ? raw : n };
           }
-        }
 
-        return trs.map((row) => {
-          const cells = row.querySelectorAll("td");
+          function parsePercentCell(cell) {
+            if (!cell) return { text: null, pct: null };
 
-          const result = {
-            id: null,
-            symbol: null,
-            name: null,
-            image: null,
-            current_price: null,
-            market_cap: null,
-            market_cap_rank: null,
-            fully_diluted_variation: null,
-            total_volume: null,
-            price_change_percentage_24h: null,
-            last_updated: scrapeTimestamp,
-          };
+            const span = cell.querySelector("span");
+            if (!span) return { text: null, pct: null };
 
-          if (!cells.length) return result;
+            const text = span.textContent.trim();
+            const rawJson = span.getAttribute("data-json");
+            if (!rawJson) return { text, pct: null };
 
-          const starIcon = row.querySelector("i[data-coin-id]");
-          const coinIdAttr = starIcon?.getAttribute("data-coin-id") || null;
+            try {
+              const obj = JSON.parse(rawJson);
+              const v = obj?.usd;
+              const n = Number(v);
+              return { text, pct: Number.isNaN(n) ? v : n };
+            } catch {
+              return { text, pct: null };
+            }
+          }
 
-          const rankText = cells[1]?.innerText.trim() || null;
-          const rankNum = rankText ? Number(rankText) : null;
-          result.market_cap_rank = Number.isNaN(rankNum) ? rankText : rankNum;
+          return trs.map((row) => {
+            const cells = row.querySelectorAll("td");
 
-          const coinCell = cells[2];
-          if (coinCell) {
-            const anchor = coinCell.querySelector("a");
-            if (anchor) {
-              const href = anchor.getAttribute("href") || "";
-              const parts = href.split("/");
-              const slug = parts[parts.length - 1] || null;
-              result.id = slug || coinIdAttr || null;
+            const result = {
+              id: null,
+              symbol: null,
+              name: null,
+              image: null,
+              current_price: null,
+              market_cap: null,
+              market_cap_rank: null,
+              fully_diluted_variation: null,
+              total_volume: null,
+              price_change_percentage_24h: null,
+              last_updated: scrapeTimestamp,
+            };
+
+            if (!cells.length) return result;
+
+            const starIcon = row.querySelector("i[data-coin-id]");
+            const coinIdAttr = starIcon?.getAttribute("data-coin-id") || null;
+
+            const rankText = cells[1]?.innerText.trim() || null;
+            const rankNum = rankText ? Number(rankText) : null;
+            result.market_cap_rank = Number.isNaN(rankNum) ? rankText : rankNum;
+
+            const coinCell = cells[2];
+            if (coinCell) {
+              const anchor = coinCell.querySelector("a");
+              if (anchor) {
+                const href = anchor.getAttribute("href") || "";
+                const parts = href.split("/");
+                const slug = parts[parts.length - 1] || null;
+                result.id = slug || coinIdAttr || null;
+              } else {
+                result.id = coinIdAttr || null;
+              }
+
+              const img = coinCell.querySelector("img");
+              if (img) result.image = img.getAttribute("src") || null;
+
+              const nameContainer = coinCell.querySelector("a div div");
+              if (nameContainer) {
+                const firstNode = nameContainer.childNodes[0];
+                if (firstNode && firstNode.textContent) {
+                  result.name = firstNode.textContent.trim();
+                }
+                const symbolEl = nameContainer.querySelector("div");
+                if (symbolEl) {
+                  const symText = symbolEl.textContent.trim();
+                  result.symbol = symText ? symText.toLowerCase() : null;
+                }
+              }
             } else {
               result.id = coinIdAttr || null;
             }
 
-            const img = coinCell.querySelector("img");
-            if (img) result.image = img.getAttribute("src") || null;
+            const { usd: current_price } = parsePriceCell(cells[4]);
+            result.current_price = current_price;
 
-            const nameContainer = coinCell.querySelector("a div div");
-            if (nameContainer) {
-              const firstNode = nameContainer.childNodes[0];
-              if (firstNode && firstNode.textContent) {
-                result.name = firstNode.textContent.trim();
-              }
-              const symbolEl = nameContainer.querySelector("div");
-              if (symbolEl) {
-                const symText = symbolEl.textContent.trim();
-                result.symbol = symText ? symText.toLowerCase() : null;
-              }
-            }
-          } else {
-            result.id = coinIdAttr || null;
-          }
+            const { pct: price_change_percentage_24h } = parsePercentCell(cells[6]);
+            result.price_change_percentage_24h = price_change_percentage_24h;
 
-          const { usd: current_price } = parsePriceCell(cells[4]);
-          result.current_price = current_price;
+            const { usd: total_volume } = parsePriceCell(cells[9]);
+            result.total_volume = total_volume;
 
-          const { pct: price_change_percentage_24h } = parsePercentCell(cells[6]);
-          result.price_change_percentage_24h = price_change_percentage_24h;
+            const { usd: market_cap } = parsePriceCell(cells[10]);
+            result.market_cap = market_cap;
 
-          const { usd: total_volume } = parsePriceCell(cells[9]);
-          result.total_volume = total_volume;
+            const { usd: fdv } = parsePriceCell(cells[11]);
+            result.fully_diluted_variation = fdv;
 
-          const { usd: market_cap } = parsePriceCell(cells[10]);
-          result.market_cap = market_cap;
+            return result;
+          });
+        },
+        tableSelector,
+        pageNumber,
+        scrapeTimestamp
+      );
 
-          const { usd: fdv } = parsePriceCell(cells[11]);
-          result.fully_diluted_variation = fdv;
+      console.log(`✓ Page ${pageNumber}: extracted ${rows.length} rows`);
+      return rows;
 
-          return result;
-        });
-      },
-      tableSelector,
-      pageNumber,
-      scrapeTimestamp
-    );
-
-    console.log(`✓ Page ${pageNumber}: extracted ${rows.length} rows`);
-    return rows;
-
-  } catch (err) {
-    console.error(`✗ Error on page ${pageNumber}:`, err.message);
-    throw err; // Re-throw to be caught in main loop
+    } catch (err) {
+      console.error(`✗ Attempt ${attempt}/${retries + 1} failed on page ${pageNumber}:`, err.message);
+      
+      if (attempt <= retries) {
+        console.log(`⏳ Retrying in 5 seconds...`);
+        await sleep(5000);
+      } else {
+        throw err; // All retries exhausted
+      }
+    }
   }
 }
 
-async function scrapeCoinGeckoAllPages() {
-  const browser = await puppeteer.launch({
+async function createBrowser() {
+  return await puppeteer.launch({
     headless: true,
+    protocolTimeout: 180000, // 3 minutes
     args: [
       "--no-sandbox",
       "--disable-setuid-sandbox",
@@ -174,9 +184,11 @@ async function scrapeCoinGeckoAllPages() {
       "--disable-blink-features=AutomationControlled"
     ],
   });
+}
 
+async function createPage(browser) {
   const page = await browser.newPage();
-
+  
   page.setDefaultNavigationTimeout(60000);
   page.setDefaultTimeout(60000);
 
@@ -187,6 +199,13 @@ async function scrapeCoinGeckoAllPages() {
   );
 
   await page.setViewport({ width: 1400, height: 900 });
+  
+  return page;
+}
+
+async function scrapeCoinGeckoAllPages() {
+  let browser = await createBrowser();
+  let page = await createPage(browser);
 
   const allCoins = [];
   const scrapeTimestamp = new Date().toISOString();
@@ -194,6 +213,16 @@ async function scrapeCoinGeckoAllPages() {
   const maxConsecutiveErrors = 3;
 
   for (let p = START_PAGE; p <= MAX_PAGE; p++) {
+    // Restart browser periodically to prevent resource accumulation
+    if ((p - START_PAGE) % RESTART_INTERVAL === 0 && p !== START_PAGE) {
+      console.log(`\n🔄 Restarting browser at page ${p} to free resources...`);
+      await browser.close();
+      await sleep(2000);
+      
+      browser = await createBrowser();
+      page = await createPage(browser);
+    }
+
     try {
       const rows = await scrapeOnePage(page, p, scrapeTimestamp);
       
@@ -207,8 +236,8 @@ async function scrapeCoinGeckoAllPages() {
       
       console.log(`Progress: ${allCoins.length} total coins scraped`);
       
-      // Random delay between 2-4 seconds to avoid rate limiting
-      const delay = 2000 + Math.random() * 2000;
+      // Random delay between 3-6 seconds to avoid rate limiting
+      const delay = 3000 + Math.random() * 3000;
       await sleep(delay);
       
     } catch (err) {
@@ -220,8 +249,8 @@ async function scrapeCoinGeckoAllPages() {
         break;
       }
       
-      // Wait longer before retrying
-      await sleep(5000);
+      // Wait longer before continuing after error
+      await sleep(8000);
     }
   }
 
@@ -233,6 +262,7 @@ async function scrapeCoinGeckoAllPages() {
   try {
     console.log("Starting CoinGecko scraper...");
     console.log(`Pages: ${START_PAGE} to ${MAX_PAGE}`);
+    console.log(`Browser restart interval: every ${RESTART_INTERVAL} pages\n`);
     
     const coins = await scrapeCoinGeckoAllPages();
     

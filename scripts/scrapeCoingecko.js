@@ -9,7 +9,7 @@ function sleep(ms) {
 const START_PAGE = 1;
 const MAX_PAGE = 100;
 const BASE_URL = "https://www.coingecko.com";
-const RESTART_INTERVAL = 20; // Restart browser every 20 pages
+const RESTART_INTERVAL = 20;
 
 async function scrapeOnePage(page, pageNumber, scrapeTimestamp, retries = 2) {
   const url = `${BASE_URL}?page=${pageNumber}`;
@@ -23,11 +23,10 @@ async function scrapeOnePage(page, pageNumber, scrapeTimestamp, retries = 2) {
         timeout: 60000,
       });
 
-      await sleep(3000); // Increased wait time
+      await sleep(3000);
 
       const tableSelector = "table.gecko-homepage-coin-table tbody tr";
 
-      // Check if table exists
       const tableExists = await page.evaluate(() => {
         return !!document.querySelector("table.gecko-homepage-coin-table");
       });
@@ -137,7 +136,9 @@ async function scrapeOnePage(page, pageNumber, scrapeTimestamp, retries = 2) {
             const { usd: current_price } = parsePriceCell(cells[4]);
             result.current_price = current_price;
 
-            const { pct: price_change_percentage_24h } = parsePercentCell(cells[6]);
+            const { pct: price_change_percentage_24h } = parsePercentCell(
+              cells[6]
+            );
             result.price_change_percentage_24h = price_change_percentage_24h;
 
             const { usd: total_volume } = parsePriceCell(cells[9]);
@@ -159,15 +160,17 @@ async function scrapeOnePage(page, pageNumber, scrapeTimestamp, retries = 2) {
 
       console.log(`✓ Page ${pageNumber}: extracted ${rows.length} rows`);
       return rows;
-
     } catch (err) {
-      console.error(`✗ Attempt ${attempt}/${retries + 1} failed on page ${pageNumber}:`, err.message);
-      
+      console.error(
+        `✗ Attempt ${attempt}/${retries + 1} failed on page ${pageNumber}:`,
+        err.message
+      );
+
       if (attempt <= retries) {
         console.log(`⏳ Retrying in 5 seconds...`);
         await sleep(5000);
       } else {
-        throw err; // All retries exhausted
+        throw err;
       }
     }
   }
@@ -176,19 +179,19 @@ async function scrapeOnePage(page, pageNumber, scrapeTimestamp, retries = 2) {
 async function createBrowser() {
   return await puppeteer.launch({
     headless: true,
-    protocolTimeout: 180000, // 3 minutes
+    protocolTimeout: 180000,
     args: [
       "--no-sandbox",
       "--disable-setuid-sandbox",
       "--disable-dev-shm-usage",
-      "--disable-blink-features=AutomationControlled"
+      "--disable-blink-features=AutomationControlled",
     ],
   });
 }
 
 async function createPage(browser) {
   const page = await browser.newPage();
-  
+
   page.setDefaultNavigationTimeout(60000);
   page.setDefaultTimeout(60000);
 
@@ -199,7 +202,7 @@ async function createPage(browser) {
   );
 
   await page.setViewport({ width: 1400, height: 900 });
-  
+
   return page;
 }
 
@@ -213,43 +216,50 @@ async function scrapeCoinGeckoAllPages() {
   const maxConsecutiveErrors = 3;
 
   for (let p = START_PAGE; p <= MAX_PAGE; p++) {
-    // Restart browser periodically to prevent resource accumulation
+    console.log(`\n[DEBUG] Starting iteration for page ${p}/${MAX_PAGE}`);
+    
     if ((p - START_PAGE) % RESTART_INTERVAL === 0 && p !== START_PAGE) {
       console.log(`\n🔄 Restarting browser at page ${p} to free resources...`);
       await browser.close();
       await sleep(2000);
-      
+
       browser = await createBrowser();
       page = await createPage(browser);
+      console.log(`[DEBUG] Browser restarted successfully`);
     }
 
     try {
+      console.log(`[DEBUG] Calling scrapeOnePage(${p}) - consecutiveErrors=${consecutiveErrors}`);
       const rows = await scrapeOnePage(page, p, scrapeTimestamp);
-      
+      console.log(`[DEBUG] scrapeOnePage returned ${rows.length} rows`);
+
       if (rows.length === 0) {
         console.log(`⚠️  No rows found on page ${p}, stopping...`);
         break;
       }
 
       allCoins.push(...rows);
-      consecutiveErrors = 0; // Reset error counter on success
-      
-      console.log(`Progress: ${allCoins.length} total coins scraped`);
-      
-      // Random delay between 3-6 seconds to avoid rate limiting
+      consecutiveErrors = 0;
+
+      console.log(`✓ Page ${p} SUCCESS - Progress: ${allCoins.length} total coins scraped (errors reset to 0)`);
+
       const delay = 3000 + Math.random() * 3000;
+      console.log(`[DEBUG] Sleeping ${delay.toFixed(0)}ms before next page...`);
       await sleep(delay);
-      
     } catch (err) {
       consecutiveErrors++;
-      console.error(`✗ Error on page ${p} (${consecutiveErrors}/${maxConsecutiveErrors}):`, err.message);
-      
+      console.error(
+        `✗ Error on page ${p} (${consecutiveErrors}/${maxConsecutiveErrors}):`,
+        err.message
+      );
+      console.log(`[DEBUG] consecutiveErrors incremented to ${consecutiveErrors}`);
+
       if (consecutiveErrors >= maxConsecutiveErrors) {
         console.log(`\n⚠️  Too many consecutive errors, stopping at page ${p}`);
         break;
       }
-      
-      // Wait longer before continuing after error
+
+      console.log(`[DEBUG] Sleeping 8s before retry...`);
       await sleep(8000);
     }
   }
@@ -263,9 +273,9 @@ async function scrapeCoinGeckoAllPages() {
     console.log("Starting CoinGecko scraper...");
     console.log(`Pages: ${START_PAGE} to ${MAX_PAGE}`);
     console.log(`Browser restart interval: every ${RESTART_INTERVAL} pages\n`);
-    
+
     const coins = await scrapeCoinGeckoAllPages();
-    
+
     console.log(`\n✓ Total rows scraped: ${coins.length}`);
 
     const outputDir = path.join(process.cwd(), "data");
@@ -274,14 +284,12 @@ async function scrapeCoinGeckoAllPages() {
       console.log(`Created output directory: ${outputDir}`);
     }
 
-    const timestamp = new Date().toISOString().replace(/[:.]/g, "-").slice(0, -5);
-    const outputPath = path.join(outputDir, `coingecko-${timestamp}.json`);
-    
+    const outputPath = path.join(outputDir, "coingecko-homepages-schema.json");
+
     fs.writeFileSync(outputPath, JSON.stringify(coins, null, 2), "utf-8");
 
     console.log(`✓ Saved to ${outputPath}`);
     console.log("\nDone!");
-    
   } catch (err) {
     console.error("✗ Fatal error:", err);
     process.exit(1);

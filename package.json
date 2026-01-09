@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "scrape": "node scripts/scrapeCoingecko.js",
-    "scrape:trending": "node scrape-trending.js"
+    "scrape:trending": "node scripts/scrapeTrendingCoingecko.js"
   },
   "dependencies": {
     "puppeteer": "^23.0.0"

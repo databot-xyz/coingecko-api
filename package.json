@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "scrape": "node scripts/scrapeCoingecko.js",
-    "scrape:trending": "node scripts/scrapeTrendingCoingecko.js"
+    "scrape:trending": "node scripts/scrapeTrendingCoingecko.js",
+    "scrape:prediction": "node scripts/scrapePredictionMarketDefillama.js"
   },
   "dependencies": {
     "puppeteer": "^23.0.0"

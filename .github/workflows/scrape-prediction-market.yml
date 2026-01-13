@@ -1,0 +1,91 @@
+name: Scrape Defillama Prediction Market
+
+on:
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: defillama-prediction-market
+  cancel-in-progress: true
+
+jobs:
+  scrape-trending:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Remove old trending file
+        run: |
+          if [ -f data/defillama-prediction-markets.json ]; then
+            rm data/defillama-prediction-markets.json
+            echo "✓ Removed old defillama-prediction-markets.json"
+          else
+            echo "ℹ No existing file to remove"
+          fi
+      
+      - name: Run trending API scraper
+        run: npm run scrape:prediction
+      
+      - name: Verify new file exists
+        run: |
+          if [ -f data/defillama-prediction-markets.json ]; then
+            FILE_SIZE=$(du -h data/defillama-prediction-markets.json | cut -f1)
+            echo "✓ New file created: $FILE_SIZE"
+          else
+            echo "✗ Error: File was not created"
+            exit 1
+          fi
+      
+      - name: Commit and push new file
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          
+          git add data/defillama-prediction-markets.json
+          
+          TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
+          git commit -m "Update prediction market - ${TIMESTAMP}" -m "[skip ci]"
+          
+          MAX_RETRIES=3
+          RETRY_COUNT=0
+          
+          while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
+            if git pull --rebase origin main && git push; then
+              echo "✓ Successfully pushed changes"
+              exit 0
+            else
+              RETRY_COUNT=$((RETRY_COUNT + 1))
+              echo "⚠️ Push failed, retry $RETRY_COUNT/$MAX_RETRIES"
+              sleep 5
+            fi
+          done
+          
+          echo "✗ Failed to push after $MAX_RETRIES attempts"
+          exit 1
+      
+      - name: Upload artifact (backup)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: trending-data-${{ github.run_number }}
+          path: data/defillama-prediction-markets.json
+          retention-days: 3
+          if-no-files-found: ignore

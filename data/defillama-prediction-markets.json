@@ -21,7 +21,7 @@
     "name": "Polymarket",
     "logo": "https://icons.llamao.fi/icons/protocols/polymarket?w=48&h=48",
     "chains": "1 chain",
-    "tvl": 345120000,
+    "tvl": 353380000,
     "volume_7d": 785570000,
     "fees_7d": 666544,
     "revenue_7d": 533237,
@@ -30,7 +30,7 @@
     "fees_30d": 1610000,
     "revenue_30d": 841145,
     "volume_24h": 115150000,
-    "fees_24h": 102430,
+    "fees_24h": 105212,
     "revenue_24h": 81406
   },
   {
@@ -38,7 +38,7 @@
     "name": "OPINION",
     "logo": "https://icons.llamao.fi/icons/protocols/opinion?w=48&h=48",
     "chains": "1 chain",
-    "tvl": 158050000,
+    "tvl": 158160000,
     "volume_7d": 776600000,
     "fees_7d": 1420000,
     "revenue_7d": 1420000,
@@ -47,7 +47,7 @@
     "fees_30d": 6430000,
     "revenue_30d": 6430000,
     "volume_24h": 119420000,
-    "fees_24h": 327617,
+    "fees_24h": 327608,
     "revenue_24h": 327608
   },
   {
@@ -72,7 +72,7 @@
     "name": "Predict Fun",
     "logo": "https://icons.llamao.fi/icons/protocols/predict-fun?w=48&h=48",
     "chains": "2 chains",
-    "tvl": 22400000,
+    "tvl": 22370000,
     "volume_7d": 99860000,
     "fees_7d": 180946,
     "revenue_7d": 180946,
@@ -81,7 +81,7 @@
     "fees_30d": 641141,
     "revenue_30d": 641141,
     "volume_24h": 9060000,
-    "fees_24h": 11581,
+    "fees_24h": 11729,
     "revenue_24h": 11699
   },
   {
@@ -89,7 +89,7 @@
     "name": "SX Bet",
     "logo": "https://icons.llamao.fi/icons/protocols/sx-bet?w=48&h=48",
     "chains": "1 chain",
-    "tvl": 1510000,
+    "tvl": 1000000,
     "volume_7d": 16460000,
     "fees_7d": null,
     "revenue_7d": null,
@@ -115,7 +115,7 @@
     "fees_30d": 439801,
     "revenue_30d": 439801,
     "volume_24h": 312303,
-    "fees_24h": 10006,
+    "fees_24h": 8936,
     "revenue_24h": 8838
   },
   {
@@ -132,7 +132,7 @@
     "fees_30d": 443988,
     "revenue_30d": 443988,
     "volume_24h": 642558,
-    "fees_24h": 19249,
+    "fees_24h": 19367,
     "revenue_24h": 19299
   },
   {
@@ -140,7 +140,7 @@
     "name": "Myriad Markets",
     "logo": "https://icons.llamao.fi/icons/protocols/myriad-markets?w=48&h=48",
     "chains": "3 chains",
-    "tvl": 830520,
+    "tvl": 832108,
     "volume_7d": 2440000,
     "fees_7d": 8231,
     "revenue_7d": 3670,
@@ -149,7 +149,7 @@
     "fees_30d": 54906,
     "revenue_30d": 24468,
     "volume_24h": 534930,
-    "fees_24h": 1334,
+    "fees_24h": 1282,
     "revenue_24h": 581
   },
   {
@@ -157,11 +157,11 @@
     "name": "Limitless Exchange",
     "logo": "https://icons.llamao.fi/icons/protocols/limitless-exchange?w=48&h=48",
     "chains": "1 chain",
-    "tvl": 471582,
+    "tvl": 475635,
     "volume_7d": 1820000,
     "fees_7d": 5688,
     "revenue_7d": 106,
-    "mcap_tvl": 24.76,
+    "mcap_tvl": 24.5,
     "volume_30d": 16370000.000000002,
     "fees_30d": 53239,
     "revenue_30d": 1188,
@@ -183,7 +183,7 @@
     "fees_30d": 7288,
     "revenue_30d": 7288,
     "volume_24h": 52067,
-    "fees_24h": 368,
+    "fees_24h": 324,
     "revenue_24h": 328
   },
   {
@@ -208,7 +208,7 @@
     "name": "Gacha",
     "logo": "https://icons.llamao.fi/icons/protocols/gacha?w=48&h=48",
     "chains": "1 chain",
-    "tvl": 34178,
+    "tvl": 33804,
     "volume_7d": 39501,
     "fees_7d": 851,
     "revenue_7d": 851,
@@ -217,7 +217,7 @@
     "fees_30d": 4124,
     "revenue_30d": 4124,
     "volume_24h": 6540,
-    "fees_24h": 153,
+    "fees_24h": 226,
     "revenue_24h": 186
   },
   {
@@ -225,7 +225,7 @@
     "name": "Seer",
     "logo": "https://icons.llamao.fi/icons/protocols/seer?w=48&h=48",
     "chains": "2 chains",
-    "tvl": 1410000,
+    "tvl": 1420000,
     "volume_7d": 18023,
     "fees_7d": null,
     "revenue_7d": null,
@@ -251,7 +251,7 @@
     "fees_30d": 37,
     "revenue_30d": 37,
     "volume_24h": 1121,
-    "fees_24h": 2,
+    "fees_24h": 0,
     "revenue_24h": 0
   },
   {
@@ -276,11 +276,11 @@
     "name": "Rain",
     "logo": "https://icons.llamao.fi/icons/protocols/rain?w=48&h=48",
     "chains": "1 chain",
-    "tvl": 3620000,
+    "tvl": 3340000,
     "volume_7d": 771,
     "fees_7d": 83,
     "revenue_7d": 50,
-    "mcap_tvl": 939.2,
+    "mcap_tvl": 1024.54,
     "volume_30d": 1020000,
     "fees_30d": 39725,
     "revenue_30d": 25976,
@@ -395,11 +395,11 @@
     "name": "Augur",
     "logo": "https://icons.llamao.fi/icons/protocols/augur?w=48&h=48",
     "chains": "1 chain",
-    "tvl": 2320000,
+    "tvl": 2330000,
     "volume_7d": null,
     "fees_7d": null,
     "revenue_7d": null,
-    "mcap_tvl": 2.62,
+    "mcap_tvl": 2.61,
     "volume_30d": null,
     "fees_30d": null,
     "revenue_30d": null,
@@ -412,16 +412,16 @@
     "name": "Overtime",
     "logo": "https://icons.llamao.fi/icons/protocols/overtime?w=48&h=48",
     "chains": "6 chains",
-    "tvl": 2049999.9999999998,
+    "tvl": 2089999.9999999998,
     "volume_7d": null,
     "fees_7d": 60643,
     "revenue_7d": 60643,
-    "mcap_tvl": 7.05,
+    "mcap_tvl": 6.89,
     "volume_30d": null,
     "fees_30d": 220266,
     "revenue_30d": 220266,
     "volume_24h": null,
-    "fees_24h": 7190,
+    "fees_24h": 7398,
     "revenue_24h": 7330
   },
   {
@@ -429,7 +429,7 @@
     "name": "Azuro",
     "logo": "https://icons.llamao.fi/icons/protocols/azuro?w=48&h=48",
     "chains": "4 chains",
-    "tvl": 1060000,
+    "tvl": 1050000,
     "volume_7d": null,
     "fees_7d": 144747,
     "revenue_7d": 144747,
@@ -438,7 +438,7 @@
     "fees_30d": 135259,
     "revenue_30d": 135259,
     "volume_24h": null,
-    "fees_24h": -9533,
+    "fees_24h": -40055,
     "revenue_24h": -40702
   },
   {
@@ -446,7 +446,7 @@
     "name": "Zethr",
     "logo": "https://icons.llamao.fi/icons/protocols/zethr?w=48&h=48",
     "chains": "1 chain",
-    "tvl": 825192,
+    "tvl": 825750,
     "volume_7d": null,
     "fees_7d": null,
     "revenue_7d": null,
@@ -463,11 +463,11 @@
     "name": "PRDT",
     "logo": "https://icons.llamao.fi/icons/protocols/prdt?w=48&h=48",
     "chains": "6 chains",
-    "tvl": 622745,
+    "tvl": 623604,
     "volume_7d": null,
     "fees_7d": null,
     "revenue_7d": null,
-    "mcap_tvl": 43.24,
+    "mcap_tvl": 43.19,
     "volume_30d": null,
     "fees_30d": null,
     "revenue_30d": null,
@@ -480,7 +480,7 @@
     "name": "Liquidity House",
     "logo": "https://icons.llamao.fi/icons/protocols/liquidity-house?w=48&h=48",
     "chains": "1 chain",
-    "tvl": 509699,
+    "tvl": 511838,
     "volume_7d": null,
     "fees_7d": null,
     "revenue_7d": null,
@@ -497,11 +497,11 @@
     "name": "Divvy.Bet",
     "logo": "https://icons.llamao.fi/icons/protocols/divvy.bet?w=48&h=48",
     "chains": "1 chain",
-    "tvl": 209852,
+    "tvl": 211272,
     "volume_7d": null,
     "fees_7d": null,
     "revenue_7d": null,
-    "mcap_tvl": 0.91,
+    "mcap_tvl": 0.9,
     "volume_30d": null,
     "fees_30d": null,
     "revenue_30d": null,
@@ -514,7 +514,7 @@
     "name": "Clutch Markets",
     "logo": "https://icons.llamao.fi/icons/protocols/clutch-markets?w=48&h=48",
     "chains": "2 chains",
-    "tvl": 166581,
+    "tvl": 163646,
     "volume_7d": null,
     "fees_7d": null,
     "revenue_7d": null,
@@ -531,11 +531,11 @@
     "name": "Bodega Market",
     "logo": "https://icons.llamao.fi/icons/protocols/bodega-market?w=48&h=48",
     "chains": "1 chain",
-    "tvl": 129667,
+    "tvl": 129955,
     "volume_7d": null,
     "fees_7d": null,
     "revenue_7d": null,
-    "mcap_tvl": 5.39,
+    "mcap_tvl": 5.41,
     "volume_30d": null,
     "fees_30d": null,
     "revenue_30d": null,
@@ -565,11 +565,11 @@
     "name": "eesee",
     "logo": "https://icons.llamao.fi/icons/protocols/eesee?w=48&h=48",
     "chains": "1 chain",
-    "tvl": 43350,
+    "tvl": 43261,
     "volume_7d": null,
     "fees_7d": null,
     "revenue_7d": null,
-    "mcap_tvl": 24.53,
+    "mcap_tvl": 24.1,
     "volume_30d": null,
     "fees_30d": null,
     "revenue_30d": null,
@@ -586,7 +586,7 @@
     "volume_7d": null,
     "fees_7d": null,
     "revenue_7d": null,
-    "mcap_tvl": 40.14,
+    "mcap_tvl": 40.38,
     "volume_30d": null,
     "fees_30d": null,
     "revenue_30d": null,
@@ -599,7 +599,7 @@
     "name": "Precog Market",
     "logo": "https://icons.llamao.fi/icons/protocols/precog-market?w=48&h=48",
     "chains": "1 chain",
-    "tvl": 14917,
+    "tvl": 14919,
     "volume_7d": null,
     "fees_7d": null,
     "revenue_7d": null,
@@ -637,7 +637,7 @@
     "volume_7d": null,
     "fees_7d": null,
     "revenue_7d": null,
-    "mcap_tvl": 141.01,
+    "mcap_tvl": 141.73,
     "volume_30d": null,
     "fees_30d": null,
     "revenue_30d": null,
@@ -650,7 +650,7 @@
     "name": "SynStation",
     "logo": "https://icons.llamao.fi/icons/protocols/synstation?w=48&h=48",
     "chains": "3 chains",
-    "tvl": 10285,
+    "tvl": 10235,
     "volume_7d": null,
     "fees_7d": null,
     "revenue_7d": null,
@@ -732,23 +732,6 @@
   },
   {
     "rank": 44,
-    "name": "DeeppDAO",
-    "logo": "https://icons.llamao.fi/icons/protocols/deeppdao?w=48&h=48",
-    "chains": "1 chain",
-    "tvl": 3952,
-    "volume_7d": null,
-    "fees_7d": null,
-    "revenue_7d": null,
-    "mcap_tvl": null,
-    "volume_30d": null,
-    "fees_30d": null,
-    "revenue_30d": null,
-    "volume_24h": null,
-    "fees_24h": null,
-    "revenue_24h": null
-  },
-  {
-    "rank": 45,
     "name": "CatsLuck",
     "logo": "https://icons.llamao.fi/icons/protocols/catsluck?w=48&h=48",
     "chains": "1 chain",
@@ -765,11 +748,28 @@
     "revenue_24h": null
   },
   {
-    "rank": 46,
+    "rank": 45,
     "name": "Perfect Pool",
     "logo": "https://icons.llamao.fi/icons/protocols/perfect-pool?w=48&h=48",
     "chains": "2 chains",
-    "tvl": 2563,
+    "tvl": 2562,
+    "volume_7d": null,
+    "fees_7d": null,
+    "revenue_7d": null,
+    "mcap_tvl": null,
+    "volume_30d": null,
+    "fees_30d": null,
+    "revenue_30d": null,
+    "volume_24h": null,
+    "fees_24h": null,
+    "revenue_24h": null
+  },
+  {
+    "rank": 46,
+    "name": "ScorePlay.xyz",
+    "logo": "https://icons.llamao.fi/icons/protocols/scoreplay.xyz?w=48&h=48",
+    "chains": "2 chains",
+    "tvl": 2511,
     "volume_7d": null,
     "fees_7d": null,
     "revenue_7d": null,
@@ -783,23 +783,6 @@
   },
   {
     "rank": 47,
-    "name": "ScorePlay.xyz",
-    "logo": "https://icons.llamao.fi/icons/protocols/scoreplay.xyz?w=48&h=48",
-    "chains": "2 chains",
-    "tvl": 2459,
-    "volume_7d": null,
-    "fees_7d": null,
-    "revenue_7d": null,
-    "mcap_tvl": null,
-    "volume_30d": null,
-    "fees_30d": null,
-    "revenue_30d": null,
-    "volume_24h": null,
-    "fees_24h": null,
-    "revenue_24h": null
-  },
-  {
-    "rank": 48,
     "name": "Prophet",
     "logo": "https://icons.llamao.fi/icons/protocols/prophet?w=48&h=48",
     "chains": "1 chain",
@@ -816,7 +799,7 @@
     "revenue_24h": null
   },
   {
-    "rank": 49,
+    "rank": 48,
     "name": "R3R",
     "logo": "https://icons.llamao.fi/icons/protocols/r3r?w=48&h=48",
     "chains": "1 chain",
@@ -833,7 +816,7 @@
     "revenue_24h": null
   },
   {
-    "rank": 50,
+    "rank": 49,
     "name": "Risq Protocol",
     "logo": "https://icons.llamao.fi/icons/protocols/risq-protocol?w=48&h=48",
     "chains": "1 chain",
@@ -850,24 +833,7 @@
     "revenue_24h": null
   },
   {
-    "rank": 51,
-    "name": "ZKasino",
-    "logo": "https://icons.llamao.fi/icons/protocols/zkasino?w=48&h=48",
-    "chains": "4 chains",
-    "tvl": 975.37,
-    "volume_7d": null,
-    "fees_7d": null,
-    "revenue_7d": null,
-    "mcap_tvl": null,
-    "volume_30d": null,
-    "fees_30d": null,
-    "revenue_30d": null,
-    "volume_24h": null,
-    "fees_24h": null,
-    "revenue_24h": null
-  },
-  {
-    "rank": 52,
+    "rank": 50,
     "name": "SageBet",
     "logo": "https://icons.llamao.fi/icons/protocols/sagebet?w=48&h=48",
     "chains": "1 chain",
@@ -884,11 +850,11 @@
     "revenue_24h": null
   },
   {
-    "rank": 53,
+    "rank": 51,
     "name": "BetFolio",
     "logo": "https://icons.llamao.fi/icons/protocols/betfolio?w=48&h=48",
     "chains": "1 chain",
-    "tvl": 105.96,
+    "tvl": 105.97,
     "volume_7d": null,
     "fees_7d": null,
     "revenue_7d": null,
@@ -901,7 +867,7 @@
     "revenue_24h": null
   },
   {
-    "rank": 54,
+    "rank": 52,
     "name": "TopCut Finance",
     "logo": "https://icons.llamao.fi/icons/protocols/topcut-finance?w=48&h=48",
     "chains": "1 chain",
@@ -918,11 +884,11 @@
     "revenue_24h": 0
   },
   {
-    "rank": 55,
+    "rank": 53,
     "name": "Nexter",
     "logo": "https://icons.llamao.fi/icons/protocols/nexter?w=48&h=48",
     "chains": "2 chains",
-    "tvl": 66.96,
+    "tvl": 68.57,
     "volume_7d": null,
     "fees_7d": null,
     "revenue_7d": null,
@@ -935,7 +901,7 @@
     "revenue_24h": null
   },
   {
-    "rank": 56,
+    "rank": 54,
     "name": "Belief Market",
     "logo": "https://icons.llamao.fi/icons/protocols/belief-market?w=48&h=48",
     "chains": "2 chains",
@@ -952,11 +918,11 @@
     "revenue_24h": null
   },
   {
-    "rank": 57,
+    "rank": 55,
     "name": "Random Reward",
     "logo": "https://icons.llamao.fi/icons/protocols/random-reward?w=48&h=48",
     "chains": "1 chain",
-    "tvl": 40.21,
+    "tvl": 40.17,
     "volume_7d": null,
     "fees_7d": null,
     "revenue_7d": null,
@@ -969,7 +935,7 @@
     "revenue_24h": null
   },
   {
-    "rank": 58,
+    "rank": 56,
     "name": "Unihedge",
     "logo": "https://icons.llamao.fi/icons/protocols/unihedge?w=48&h=48",
     "chains": "1 chain",
@@ -986,7 +952,7 @@
     "revenue_24h": null
   },
   {
-    "rank": 59,
+    "rank": 57,
     "name": "SportBet",
     "logo": "https://icons.llamao.fi/icons/protocols/sportbet?w=48&h=48",
     "chains": "1 chain",
@@ -1003,7 +969,7 @@
     "revenue_24h": null
   },
   {
-    "rank": 60,
+    "rank": 58,
     "name": "LunaFi",
     "logo": "https://icons.llamao.fi/icons/protocols/lunafi?w=48&h=48",
     "chains": "1 chain",
@@ -1020,7 +986,7 @@
     "revenue_24h": null
   },
   {
-    "rank": 61,
+    "rank": 59,
     "name": "DropCopy",
     "logo": "https://icons.llamao.fi/icons/protocols/dropcopy?w=48&h=48",
     "chains": "1 chain",
@@ -1037,7 +1003,7 @@
     "revenue_24h": null
   },
   {
-    "rank": 62,
+    "rank": 60,
     "name": "Debets",
     "logo": "https://icons.llamao.fi/icons/protocols/debets?w=48&h=48",
     "chains": "2 chains",
@@ -1054,7 +1020,7 @@
     "revenue_24h": null
   },
   {
-    "rank": 63,
+    "rank": 61,
     "name": "NODO",
     "logo": "https://icons.llamao.fi/icons/protocols/nodo?w=48&h=48",
     "chains": "5 chains",
@@ -1071,7 +1037,7 @@
     "revenue_24h": null
   },
   {
-    "rank": 64,
+    "rank": 62,
     "name": "LoTerra",
     "logo": "https://icons.llamao.fi/icons/protocols/loterra?w=48&h=48",
     "chains": "1 chain",
@@ -1088,7 +1054,7 @@
     "revenue_24h": null
   },
   {
-    "rank": 65,
+    "rank": 63,
     "name": "TotemFi",
     "logo": "https://icons.llamao.fi/icons/protocols/totemfi?w=48&h=48",
     "chains": "1 chain",
@@ -1105,7 +1071,7 @@
     "revenue_24h": null
   },
   {
-    "rank": 66,
+    "rank": 64,
     "name": "Predictcoin",
     "logo": "https://icons.llamao.fi/icons/protocols/predictcoin?w=48&h=48",
     "chains": "1 chain",
@@ -1122,7 +1088,7 @@
     "revenue_24h": null
   },
   {
-    "rank": 67,
+    "rank": 65,
     "name": "BetSwirl",
     "logo": "https://icons.llamao.fi/icons/protocols/betswirl?w=48&h=48",
     "chains": "6 chains",
@@ -1135,11 +1101,11 @@
     "fees_30d": 14178,
     "revenue_30d": 7081,
     "volume_24h": null,
-    "fees_24h": 954,
+    "fees_24h": 1025,
     "revenue_24h": 475
   },
   {
-    "rank": 68,
+    "rank": 66,
     "name": "CoChilli",
     "logo": "https://icons.llamao.fi/icons/protocols/cochilli?w=48&h=48",
     "chains": "1 chain",
@@ -1156,7 +1122,7 @@
     "revenue_24h": null
   },
   {
-    "rank": 69,
+    "rank": 67,
     "name": "One guy Finance",
     "logo": "https://icons.llamao.fi/icons/protocols/one-guy-finance?w=48&h=48",
     "chains": "1 chain",
@@ -1173,7 +1139,7 @@
     "revenue_24h": null
   },
   {
-    "rank": 70,
+    "rank": 68,
     "name": "Bear Vs Bull",
     "logo": "https://icons.llamao.fi/icons/protocols/bear-vs-bull?w=48&h=48",
     "chains": "1 chain",
@@ -1190,7 +1156,7 @@
     "revenue_24h": 0
   },
   {
-    "rank": 71,
+    "rank": 69,
     "name": "Demented Games",
     "logo": "https://icons.llamao.fi/icons/protocols/demented-games?w=48&h=48",
     "chains": "1 chain",
@@ -1207,7 +1173,7 @@
     "revenue_24h": null
   },
   {
-    "rank": 72,
+    "rank": 70,
     "name": "MEMECAST.AI",
     "logo": "https://icons.llamao.fi/icons/protocols/memecast.ai?w=48&h=48",
     "chains": "1 chain",
@@ -1224,7 +1190,7 @@
     "revenue_24h": null
   },
   {
-    "rank": 73,
+    "rank": 71,
     "name": "SuiMarket",
     "logo": "https://icons.llamao.fi/icons/protocols/suimarket?w=48&h=48",
     "chains": "1 chain",
@@ -1241,7 +1207,7 @@
     "revenue_24h": null
   },
   {
-    "rank": 74,
+    "rank": 72,
     "name": "HackenAI",
     "logo": "https://icons.llamao.fi/icons/protocols/hackenai?w=48&h=48",
     "chains": "1 chain",
@@ -1258,7 +1224,7 @@
     "revenue_24h": null
   },
   {
-    "rank": 75,
+    "rank": 73,
     "name": "Spindash",
     "logo": "https://icons.llamao.fi/icons/protocols/spindash?w=48&h=48",
     "chains": "1 chain",
@@ -1275,7 +1241,7 @@
     "revenue_24h": null
   },
   {
-    "rank": 76,
+    "rank": 74,
     "name": "HyperTek",
     "logo": "https://icons.llamao.fi/icons/protocols/hypertek?w=48&h=48",
     "chains": "1 chain",
@@ -1288,11 +1254,11 @@
     "fees_30d": 48,
     "revenue_30d": 138,
     "volume_24h": null,
-    "fees_24h": 3,
+    "fees_24h": 2,
     "revenue_24h": -73
   },
   {
-    "rank": 77,
+    "rank": 75,
     "name": "Kava Football Club",
     "logo": "https://icons.llamao.fi/icons/protocols/kava-football-club?w=48&h=48",
     "chains": "1 chain",

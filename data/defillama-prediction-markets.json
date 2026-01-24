@@ -31,7 +31,7 @@
     "revenue_30d": 997739,
     "volume_24h": 102870000,
     "fees_24h": 86676,
-    "revenue_24h": 0
+    "revenue_24h": 68459
   },
   {
     "rank": null,
@@ -48,7 +48,7 @@
     "revenue_30d": 6610000,
     "volume_24h": 96720000,
     "fees_24h": 152408,
-    "revenue_24h": 0
+    "revenue_24h": 152408
   },
   {
     "rank": null,
@@ -82,7 +82,7 @@
     "revenue_30d": 629558,
     "volume_24h": 8320000,
     "fees_24h": 15689,
-    "revenue_24h": 0
+    "revenue_24h": 15689
   },
   {
     "rank": null,
@@ -116,7 +116,7 @@
     "revenue_30d": 451500,
     "volume_24h": 683114,
     "fees_24h": 20559,
-    "revenue_24h": 0
+    "revenue_24h": 20613
   },
   {
     "rank": null,
@@ -150,7 +150,7 @@
     "revenue_30d": 433198,
     "volume_24h": 445121,
     "fees_24h": 12698,
-    "revenue_24h": 0
+    "revenue_24h": 11538
   },
   {
     "rank": null,
@@ -167,7 +167,7 @@
     "revenue_30d": 24464,
     "volume_24h": 466527,
     "fees_24h": 1129,
-    "revenue_24h": 0
+    "revenue_24h": 490
   },
   {
     "rank": null,
@@ -184,7 +184,7 @@
     "revenue_30d": 7422,
     "volume_24h": 39623,
     "fees_24h": 270,
-    "revenue_24h": 0
+    "revenue_24h": 267
   },
   {
     "rank": null,
@@ -218,7 +218,7 @@
     "revenue_30d": 4355,
     "volume_24h": 7434,
     "fees_24h": 168,
-    "revenue_24h": 0
+    "revenue_24h": 142
   },
   {
     "rank": null,
@@ -422,7 +422,7 @@
     "revenue_30d": 224260,
     "volume_24h": null,
     "fees_24h": 5595,
-    "revenue_24h": 0
+    "revenue_24h": 5886
   },
   {
     "rank": null,
@@ -439,7 +439,7 @@
     "revenue_30d": 98345,
     "volume_24h": null,
     "fees_24h": 4201,
-    "revenue_24h": 0
+    "revenue_24h": 6678
   },
   {
     "rank": null,
@@ -1136,7 +1136,7 @@
     "revenue_30d": 7534,
     "volume_24h": null,
     "fees_24h": 503,
-    "revenue_24h": 0
+    "revenue_24h": 251
   },
   {
     "rank": null,
@@ -1289,7 +1289,7 @@
     "revenue_30d": 31,
     "volume_24h": null,
     "fees_24h": 4,
-    "revenue_24h": 0
+    "revenue_24h": -159
   },
   {
     "rank": null,

@@ -30,8 +30,8 @@
     "fees_30d": 2620000,
     "revenue_30d": 1600000,
     "volume_24h": 162660000,
-    "fees_24h": 115591,
-    "revenue_24h": 72245
+    "fees_24h": 113714,
+    "revenue_24h": 50747
   },
   {
     "rank": null,
@@ -64,8 +64,8 @@
     "fees_30d": 5840000,
     "revenue_30d": 5840000,
     "volume_24h": 95640000,
-    "fees_24h": 108414,
-    "revenue_24h": 108414
+    "fees_24h": 111327,
+    "revenue_24h": 111327
   },
   {
     "rank": null,
@@ -81,8 +81,8 @@
     "fees_30d": 728983,
     "revenue_30d": 728983,
     "volume_24h": 2210000,
-    "fees_24h": 10394,
-    "revenue_24h": 10394
+    "fees_24h": 10397,
+    "revenue_24h": 10397
   },
   {
     "rank": null,
@@ -132,8 +132,8 @@
     "fees_30d": 484514,
     "revenue_30d": 484514,
     "volume_24h": 536831,
-    "fees_24h": 16626,
-    "revenue_24h": 16626
+    "fees_24h": 15834,
+    "revenue_24h": 15834
   },
   {
     "rank": null,
@@ -149,8 +149,8 @@
     "fees_30d": 50716,
     "revenue_30d": 22463,
     "volume_24h": 1960000,
-    "fees_24h": 1207,
-    "revenue_24h": 574
+    "fees_24h": 795,
+    "revenue_24h": 378
   },
   {
     "rank": null,
@@ -166,8 +166,8 @@
     "fees_30d": 426620,
     "revenue_30d": 426620,
     "volume_24h": 321980,
-    "fees_24h": 9769,
-    "revenue_24h": 9769
+    "fees_24h": 9438,
+    "revenue_24h": 9438
   },
   {
     "rank": null,
@@ -200,8 +200,8 @@
     "fees_30d": 8048,
     "revenue_30d": 8048,
     "volume_24h": 42403,
-    "fees_24h": 266,
-    "revenue_24h": 266
+    "fees_24h": 262,
+    "revenue_24h": 262
   },
   {
     "rank": null,
@@ -217,8 +217,8 @@
     "fees_30d": 4254,
     "revenue_30d": 4254,
     "volume_24h": 6727,
-    "fees_24h": 133,
-    "revenue_24h": 133
+    "fees_24h": 152,
+    "revenue_24h": 152
   },
   {
     "rank": null,
@@ -404,8 +404,8 @@
     "fees_30d": 239169,
     "revenue_30d": 239169,
     "volume_24h": null,
-    "fees_24h": 8761,
-    "revenue_24h": 8761
+    "fees_24h": 7808,
+    "revenue_24h": 7808
   },
   {
     "rank": null,
@@ -1101,8 +1101,8 @@
     "fees_30d": 14929,
     "revenue_30d": 7457,
     "volume_24h": null,
-    "fees_24h": 308,
-    "revenue_24h": 154
+    "fees_24h": 218,
+    "revenue_24h": 109
   },
   {
     "rank": null,
@@ -1272,7 +1272,7 @@
     "revenue_30d": -265,
     "volume_24h": null,
     "fees_24h": 1,
-    "revenue_24h": -78
+    "revenue_24h": -76
   },
   {
     "rank": null,

@@ -46,7 +46,7 @@
     "volume_30d": 2259000000,
     "fees_30d": 3690000,
     "revenue_30d": 3690000,
-    "volume_24h": 40040000,
+    "volume_24h": 61500000,
     "fees_24h": 59652,
     "revenue_24h": 59652
   },
@@ -63,7 +63,7 @@
     "volume_30d": 1833000000,
     "fees_30d": null,
     "revenue_30d": null,
-    "volume_24h": 53380000,
+    "volume_24h": 55990000,
     "fees_24h": null,
     "revenue_24h": null
   },
@@ -80,7 +80,7 @@
     "volume_30d": 344410000,
     "fees_30d": 423967,
     "revenue_30d": 423967,
-    "volume_24h": 13430000,
+    "volume_24h": 14800000,
     "fees_24h": 8104,
     "revenue_24h": 8104
   },
@@ -97,7 +97,7 @@
     "volume_30d": 74380000,
     "fees_30d": 1070000,
     "revenue_30d": 1070000,
-    "volume_24h": 3990000,
+    "volume_24h": 3900000,
     "fees_24h": 65584,
     "revenue_24h": 65584
   },
@@ -148,7 +148,7 @@
     "volume_30d": 15850000,
     "fees_30d": 469255,
     "revenue_30d": 469255,
-    "volume_24h": 401979,
+    "volume_24h": 421374,
     "fees_24h": 12980,
     "revenue_24h": 12980
   },
@@ -165,7 +165,7 @@
     "volume_30d": 7980000,
     "fees_30d": 246984,
     "revenue_30d": 246984,
-    "volume_24h": 55879,
+    "volume_24h": 59095,
     "fees_24h": 1692,
     "revenue_24h": 1692
   },
@@ -216,7 +216,7 @@
     "volume_30d": 1270000,
     "fees_30d": 6536,
     "revenue_30d": 6536,
-    "volume_24h": 5431,
+    "volume_24h": 6248,
     "fees_24h": 50,
     "revenue_24h": 50
   },
@@ -233,7 +233,7 @@
     "volume_30d": 158137,
     "fees_30d": 3342,
     "revenue_30d": 3342,
-    "volume_24h": 5738,
+    "volume_24h": 5601,
     "fees_24h": 120,
     "revenue_24h": 120
   },
@@ -267,7 +267,7 @@
     "volume_30d": 6851,
     "fees_30d": null,
     "revenue_30d": null,
-    "volume_24h": 350,
+    "volume_24h": 328,
     "fees_24h": null,
     "revenue_24h": null
   },
@@ -284,7 +284,7 @@
     "volume_30d": 1564,
     "fees_30d": null,
     "revenue_30d": null,
-    "volume_24h": 4,
+    "volume_24h": 5,
     "fees_24h": null,
     "revenue_24h": null
   },

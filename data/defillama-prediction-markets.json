@@ -46,7 +46,7 @@
     "volume_30d": 2259000000,
     "fees_30d": 3690000,
     "revenue_30d": 3690000,
-    "volume_24h": 48940000,
+    "volume_24h": 53500000,
     "fees_24h": 55141,
     "revenue_24h": 63244
   },
@@ -63,7 +63,7 @@
     "volume_30d": 1833000000,
     "fees_30d": null,
     "revenue_30d": null,
-    "volume_24h": 30520000,
+    "volume_24h": 36700000,
     "fees_24h": null,
     "revenue_24h": null
   },
@@ -80,7 +80,7 @@
     "volume_30d": 344410000,
     "fees_30d": 423967,
     "revenue_30d": 423967,
-    "volume_24h": 9740000,
+    "volume_24h": 12660000,
     "fees_24h": 9319,
     "revenue_24h": 8750
   },
@@ -97,7 +97,7 @@
     "volume_30d": 74380000,
     "fees_30d": 1070000,
     "revenue_30d": 1070000,
-    "volume_24h": 3890000,
+    "volume_24h": 4090000,
     "fees_24h": 31663,
     "revenue_24h": 31661
   },
@@ -148,7 +148,7 @@
     "volume_30d": 15850000,
     "fees_30d": 469255,
     "revenue_30d": 469255,
-    "volume_24h": 411279,
+    "volume_24h": 420128,
     "fees_24h": 12598,
     "revenue_24h": 12383
   },
@@ -165,7 +165,7 @@
     "volume_30d": 7980000,
     "fees_30d": 246984,
     "revenue_30d": 246984,
-    "volume_24h": 56502,
+    "volume_24h": 57189,
     "fees_24h": 1651,
     "revenue_24h": 1637
   },
@@ -216,7 +216,7 @@
     "volume_30d": 1270000,
     "fees_30d": 6536,
     "revenue_30d": 6536,
-    "volume_24h": 10189,
+    "volume_24h": 10336,
     "fees_24h": 76,
     "revenue_24h": 75
   },
@@ -233,7 +233,7 @@
     "volume_30d": 158137,
     "fees_30d": 3342,
     "revenue_30d": 3342,
-    "volume_24h": 6187,
+    "volume_24h": 5858,
     "fees_24h": 128,
     "revenue_24h": 127
   },
@@ -250,7 +250,7 @@
     "volume_30d": 29142,
     "fees_30d": 33,
     "revenue_30d": 33,
-    "volume_24h": 2497,
+    "volume_24h": 10,
     "fees_24h": 0,
     "revenue_24h": 0
   },
@@ -267,7 +267,7 @@
     "volume_30d": 6851,
     "fees_30d": null,
     "revenue_30d": null,
-    "volume_24h": 324,
+    "volume_24h": 325,
     "fees_24h": null,
     "revenue_24h": null
   },

@@ -30,7 +30,7 @@
     "fees_30d": 4510000,
     "revenue_30d": 3040000,
     "volume_24h": 121360000,
-    "fees_24h": 191757,
+    "fees_24h": 190391,
     "revenue_24h": 125382
   },
   {
@@ -46,8 +46,8 @@
     "volume_30d": 2196000000,
     "fees_30d": 3550000,
     "revenue_30d": 3550000,
-    "volume_24h": 56930000,
-    "fees_24h": 82541,
+    "volume_24h": 65230000.00000001,
+    "fees_24h": 78400,
     "revenue_24h": 78400
   },
   {
@@ -63,7 +63,7 @@
     "volume_30d": 1834000000,
     "fees_30d": null,
     "revenue_30d": null,
-    "volume_24h": 66620000.00000001,
+    "volume_24h": 67010000.00000001,
     "fees_24h": null,
     "revenue_24h": null
   },
@@ -80,8 +80,8 @@
     "volume_30d": 358000000,
     "fees_30d": 419601,
     "revenue_30d": 419601,
-    "volume_24h": 19180000,
-    "fees_24h": 9342,
+    "volume_24h": 19900000,
+    "fees_24h": 7355,
     "revenue_24h": 7355
   },
   {
@@ -97,8 +97,8 @@
     "volume_30d": 76160000,
     "fees_30d": 1100000,
     "revenue_30d": 1100000,
-    "volume_24h": 2340000,
-    "fees_24h": 65573,
+    "volume_24h": 2250000,
+    "fees_24h": 65583,
     "revenue_24h": 65583
   },
   {
@@ -131,7 +131,7 @@
     "volume_30d": 26900000,
     "fees_30d": 29483,
     "revenue_30d": 12574,
-    "volume_24h": 1210000,
+    "volume_24h": 2660000,
     "fees_24h": 491,
     "revenue_24h": 231
   },
@@ -148,8 +148,8 @@
     "volume_30d": 15640000,
     "fees_30d": 463873,
     "revenue_30d": 463873,
-    "volume_24h": 513409,
-    "fees_24h": 16287,
+    "volume_24h": 536953,
+    "fees_24h": 15776,
     "revenue_24h": 15776
   },
   {
@@ -165,8 +165,8 @@
     "volume_30d": 7880000,
     "fees_30d": 243001,
     "revenue_30d": 243001,
-    "volume_24h": 152477,
-    "fees_24h": 4266,
+    "volume_24h": 154604,
+    "fees_24h": 4319,
     "revenue_24h": 4319
   },
   {
@@ -199,8 +199,8 @@
     "volume_30d": 1230000,
     "fees_30d": 6286,
     "revenue_30d": 6286,
-    "volume_24h": 24720,
-    "fees_24h": 84,
+    "volume_24h": 29108,
+    "fees_24h": 104,
     "revenue_24h": 104
   },
   {
@@ -216,8 +216,8 @@
     "volume_30d": 168476,
     "fees_30d": 3562,
     "revenue_30d": 3562,
-    "volume_24h": 19847,
-    "fees_24h": 412,
+    "volume_24h": 19421,
+    "fees_24h": 403,
     "revenue_24h": 403
   },
   {
@@ -233,7 +233,7 @@
     "volume_30d": 22977,
     "fees_30d": 26,
     "revenue_30d": 26,
-    "volume_24h": 29,
+    "volume_24h": 0,
     "fees_24h": 0,
     "revenue_24h": 0
   },
@@ -267,7 +267,7 @@
     "volume_30d": 6805,
     "fees_30d": null,
     "revenue_30d": null,
-    "volume_24h": 289,
+    "volume_24h": 272,
     "fees_24h": null,
     "revenue_24h": null
   },
@@ -387,7 +387,7 @@
     "fees_30d": 152269,
     "revenue_30d": 152269,
     "volume_24h": null,
-    "fees_24h": 2166,
+    "fees_24h": 2287,
     "revenue_24h": 2287
   },
   {
@@ -716,7 +716,7 @@
   {
     "rank": null,
     "name": "PredX Ai",
-    "logo": "https://icons.llamao.fi/icons/protocols/predx-ai?w=48&h=48",
+    "logo": "/assets/placeholder.png",
     "chains": "7 chains",
     "tvl": 3414,
     "volume_7d": null,
@@ -1135,7 +1135,7 @@
     "fees_30d": 14839,
     "revenue_30d": 7418,
     "volume_24h": null,
-    "fees_24h": 378,
+    "fees_24h": 403,
     "revenue_24h": 200
   },
   {
@@ -1305,7 +1305,7 @@
     "fees_30d": 30,
     "revenue_30d": -130,
     "volume_24h": null,
-    "fees_24h": 2,
+    "fees_24h": 1,
     "revenue_24h": -92
   },
   {

@@ -46,7 +46,7 @@
     "volume_30d": 1100000000,
     "fees_30d": null,
     "revenue_30d": null,
-    "volume_24h": 126287,
+    "volume_24h": 43919,
     "fees_24h": null,
     "revenue_24h": null
   },
@@ -63,7 +63,7 @@
     "volume_30d": 1211000000,
     "fees_30d": 2210000,
     "revenue_30d": 2210000,
-    "volume_24h": 11970000,
+    "volume_24h": 12120000,
     "fees_24h": 28138,
     "revenue_24h": 28138
   },
@@ -80,7 +80,7 @@
     "volume_30d": 388350000,
     "fees_30d": 270709,
     "revenue_30d": 270709,
-    "volume_24h": 2860000,
+    "volume_24h": 2380000,
     "fees_24h": 6812,
     "revenue_24h": 6812
   },
@@ -114,7 +114,7 @@
     "volume_30d": 88300000,
     "fees_30d": 1180000,
     "revenue_30d": 1180000,
-    "volume_24h": 3170000,
+    "volume_24h": 3050000,
     "fees_24h": 47053,
     "revenue_24h": 47053
   },
@@ -148,7 +148,7 @@
     "volume_30d": 14730000,
     "fees_30d": 439837,
     "revenue_30d": 439837,
-    "volume_24h": 586150,
+    "volume_24h": 610800,
     "fees_24h": 17867,
     "revenue_24h": 18408
   },
@@ -165,7 +165,7 @@
     "volume_30d": 5360000,
     "fees_30d": 166848,
     "revenue_30d": 166848,
-    "volume_24h": 122442,
+    "volume_24h": 121666,
     "fees_24h": 3614,
     "revenue_24h": 3620
   },
@@ -182,7 +182,7 @@
     "volume_30d": 1180000,
     "fees_30d": 5585,
     "revenue_30d": 5585,
-    "volume_24h": 35324,
+    "volume_24h": 34918,
     "fees_24h": 204,
     "revenue_24h": 206
   },
@@ -199,7 +199,7 @@
     "volume_30d": 225554,
     "fees_30d": 4741,
     "revenue_30d": 4741,
-    "volume_24h": 4055,
+    "volume_24h": 4198,
     "fees_24h": 85,
     "revenue_24h": 85
   },
@@ -233,7 +233,7 @@
     "volume_30d": 6618,
     "fees_30d": null,
     "revenue_30d": null,
-    "volume_24h": 189,
+    "volume_24h": 192,
     "fees_24h": null,
     "revenue_24h": null
   },
@@ -267,7 +267,7 @@
     "volume_30d": 665,
     "fees_30d": null,
     "revenue_30d": null,
-    "volume_24h": 125,
+    "volume_24h": 136,
     "fees_24h": null,
     "revenue_24h": null
   },

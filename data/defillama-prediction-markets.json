@@ -46,7 +46,7 @@
     "volume_30d": 1050999999.9999999,
     "fees_30d": 1870000,
     "revenue_30d": 1870000,
-    "volume_24h": 4120000,
+    "volume_24h": 4770000,
     "fees_24h": 16471,
     "revenue_24h": 16471
   },
@@ -63,7 +63,7 @@
     "volume_30d": 381470000,
     "fees_30d": 267889,
     "revenue_30d": 267889,
-    "volume_24h": 5090000,
+    "volume_24h": 4850000,
     "fees_24h": 10978,
     "revenue_24h": 9350
   },
@@ -97,7 +97,7 @@
     "volume_30d": 92460000,
     "fees_30d": 1220000,
     "revenue_30d": 1220000,
-    "volume_24h": 4600000,
+    "volume_24h": 4490000,
     "fees_24h": 44248,
     "revenue_24h": 44248
   },
@@ -114,7 +114,7 @@
     "volume_30d": 1034000000,
     "fees_30d": null,
     "revenue_30d": null,
-    "volume_24h": 13048,
+    "volume_24h": 12660,
     "fees_24h": null,
     "revenue_24h": null
   },
@@ -148,7 +148,7 @@
     "volume_30d": 14820000,
     "fees_30d": 442425,
     "revenue_30d": 442425,
-    "volume_24h": 557897,
+    "volume_24h": 502575,
     "fees_24h": 16431,
     "revenue_24h": 15249
   },
@@ -165,7 +165,7 @@
     "volume_30d": 4630000,
     "fees_30d": 141474,
     "revenue_30d": 141474,
-    "volume_24h": 46004,
+    "volume_24h": 39635,
     "fees_24h": 1373,
     "revenue_24h": 1158
   },
@@ -182,7 +182,7 @@
     "volume_30d": 1240000,
     "fees_30d": 5758,
     "revenue_30d": 5758,
-    "volume_24h": 75340,
+    "volume_24h": 66146,
     "fees_24h": 285,
     "revenue_24h": 281
   },
@@ -199,7 +199,7 @@
     "volume_30d": 230251,
     "fees_30d": 4844,
     "revenue_30d": 4844,
-    "volume_24h": 7496,
+    "volume_24h": 7555,
     "fees_24h": 154,
     "revenue_24h": 154
   },
@@ -233,7 +233,7 @@
     "volume_30d": 6558,
     "fees_30d": null,
     "revenue_30d": null,
-    "volume_24h": 187,
+    "volume_24h": 199,
     "fees_24h": null,
     "revenue_24h": null
   },
@@ -284,7 +284,7 @@
     "volume_30d": 832,
     "fees_30d": null,
     "revenue_30d": null,
-    "volume_24h": 130,
+    "volume_24h": 121,
     "fees_24h": null,
     "revenue_24h": null
   },

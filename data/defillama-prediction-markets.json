@@ -31,7 +31,7 @@
     "revenue_30d": 4390000,
     "volume_24h": 145150000,
     "fees_24h": 262897,
-    "revenue_24h": 174226
+    "revenue_24h": 176568
   },
   {
     "rank": null,
@@ -48,7 +48,7 @@
     "revenue_30d": 1310000,
     "volume_24h": 7570000,
     "fees_24h": 7818,
-    "revenue_24h": 7972
+    "revenue_24h": 7818
   },
   {
     "rank": null,
@@ -65,7 +65,7 @@
     "revenue_30d": 264930,
     "volume_24h": 5470000,
     "fees_24h": 12095,
-    "revenue_24h": 12031
+    "revenue_24h": 12095
   },
   {
     "rank": null,
@@ -133,7 +133,7 @@
     "revenue_30d": 448940,
     "volume_24h": 437286,
     "fees_24h": 13096,
-    "revenue_24h": 13458
+    "revenue_24h": 13096
   },
   {
     "rank": null,
@@ -150,7 +150,7 @@
     "revenue_30d": 113822,
     "volume_24h": 180767,
     "fees_24h": 9068,
-    "revenue_24h": 9013
+    "revenue_24h": 9068
   },
   {
     "rank": null,
@@ -184,7 +184,7 @@
     "revenue_30d": 106262,
     "volume_24h": 89059,
     "fees_24h": 2563,
-    "revenue_24h": 2565
+    "revenue_24h": 2563
   },
   {
     "rank": null,
@@ -201,7 +201,7 @@
     "revenue_30d": 6274,
     "volume_24h": 61856,
     "fees_24h": 273,
-    "revenue_24h": 254
+    "revenue_24h": 273
   },
   {
     "rank": null,
@@ -1180,14 +1180,14 @@
     "tvl": 0,
     "volume_7d": null,
     "fees_7d": 3984,
-    "revenue_7d": 1989,
+    "revenue_7d": 1993,
     "mcap_tvl": null,
     "volume_30d": null,
     "fees_30d": 18338,
-    "revenue_30d": 9170,
+    "revenue_30d": 9174,
     "volume_24h": null,
     "fees_24h": 805,
-    "revenue_24h": 414
+    "revenue_24h": 402
   },
   {
     "rank": null,
@@ -1374,7 +1374,7 @@
     "revenue_30d": 5867,
     "volume_24h": null,
     "fees_24h": 792,
-    "revenue_24h": 786
+    "revenue_24h": 792
   },
   {
     "rank": null,

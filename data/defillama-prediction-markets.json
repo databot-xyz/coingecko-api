@@ -11,7 +11,7 @@
     "mcap_tvl": 6930000,
     "volume_30d": 4200000,
     "fees_30d": 263014,
-    "revenue_30d": -43755,
+    "revenue_30d": -46489,
     "volume_24h": null,
     "fees_24h": null,
     "revenue_24h": null
@@ -28,7 +28,7 @@
     "mcap_tvl": 265756,
     "volume_30d": 265756,
     "fees_30d": 5861,
-    "revenue_30d": 5917,
+    "revenue_30d": 5407,
     "volume_24h": null,
     "fees_24h": null,
     "revenue_24h": null
@@ -45,7 +45,7 @@
     "mcap_tvl": 1140000,
     "volume_30d": 1140000,
     "fees_30d": 10261,
-    "revenue_30d": 10227,
+    "revenue_30d": 5646,
     "volume_24h": null,
     "fees_24h": null,
     "revenue_24h": null
@@ -79,7 +79,7 @@
     "mcap_tvl": 92274,
     "volume_30d": 92274,
     "fees_30d": 4335,
-    "revenue_30d": 4335,
+    "revenue_30d": 2983,
     "volume_24h": null,
     "fees_24h": null,
     "revenue_24h": null
@@ -147,7 +147,7 @@
     "mcap_tvl": 108243,
     "volume_30d": 108243,
     "fees_30d": 2232,
-    "revenue_30d": 2260,
+    "revenue_30d": 2427,
     "volume_24h": null,
     "fees_24h": null,
     "revenue_24h": null
@@ -317,7 +317,7 @@
     "mcap_tvl": 6995,
     "volume_30d": 6995,
     "fees_30d": 232,
-    "revenue_30d": 232,
+    "revenue_30d": 204,
     "volume_24h": null,
     "fees_24h": null,
     "revenue_24h": null
@@ -419,7 +419,7 @@
     "mcap_tvl": 5253,
     "volume_30d": 5253,
     "fees_30d": 363,
-    "revenue_30d": 365,
+    "revenue_30d": 354,
     "volume_24h": null,
     "fees_24h": null,
     "revenue_24h": null
@@ -1116,7 +1116,7 @@
     "mcap_tvl": 17251,
     "volume_30d": 8630,
     "fees_30d": 245,
-    "revenue_30d": 123,
+    "revenue_30d": 1888,
     "volume_24h": null,
     "fees_24h": null,
     "revenue_24h": null
@@ -1371,7 +1371,7 @@
     "mcap_tvl": 7218,
     "volume_30d": 7218,
     "fees_30d": 93,
-    "revenue_30d": 128,
+    "revenue_30d": 83,
     "volume_24h": null,
     "fees_24h": null,
     "revenue_24h": null
@@ -1388,7 +1388,7 @@
     "mcap_tvl": 450514,
     "volume_30d": 450514,
     "fees_30d": 11760,
-    "revenue_30d": 11760,
+    "revenue_30d": 11829,
     "volume_24h": null,
     "fees_24h": null,
     "revenue_24h": null

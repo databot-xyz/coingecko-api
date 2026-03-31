@@ -11,7 +11,7 @@
     "mcap_tvl": 7930000,
     "volume_30d": 4800000,
     "fees_30d": 657499,
-    "revenue_30d": 486104,
+    "revenue_30d": 538531,
     "volume_24h": null,
     "fees_24h": null,
     "revenue_24h": null
@@ -28,7 +28,7 @@
     "mcap_tvl": 233244,
     "volume_30d": 233244,
     "fees_30d": 10239,
-    "revenue_30d": 10205,
+    "revenue_30d": 10298,
     "volume_24h": null,
     "fees_24h": null,
     "revenue_24h": null
@@ -45,7 +45,7 @@
     "mcap_tvl": 420084,
     "volume_30d": 420084,
     "fees_30d": 4288,
-    "revenue_30d": 4293,
+    "revenue_30d": 4295,
     "volume_24h": null,
     "fees_24h": null,
     "revenue_24h": null
@@ -62,7 +62,7 @@
     "mcap_tvl": 68891,
     "volume_30d": 68891,
     "fees_30d": 1106,
-    "revenue_30d": 1056,
+    "revenue_30d": 1152,
     "volume_24h": null,
     "fees_24h": null,
     "revenue_24h": null
@@ -130,7 +130,7 @@
     "mcap_tvl": 106525,
     "volume_30d": 106525,
     "fees_30d": 1986,
-    "revenue_30d": 1961,
+    "revenue_30d": 1986,
     "volume_24h": null,
     "fees_24h": null,
     "revenue_24h": null
@@ -210,12 +210,12 @@
     "chains": "3 chains",
     "tvl": 703095,
     "volume_7d": 1680,
-    "fees_7d": 801,
+    "fees_7d": 971,
     "revenue_7d": null,
     "mcap_tvl": 12535,
-    "volume_30d": 5852,
+    "volume_30d": 6022,
     "fees_30d": null,
-    "revenue_30d": null,
+    "revenue_30d": 170,
     "volume_24h": null,
     "fees_24h": null,
     "revenue_24h": null
@@ -317,7 +317,7 @@
     "mcap_tvl": 7261,
     "volume_30d": 7261,
     "fees_30d": 68,
-    "revenue_30d": 66,
+    "revenue_30d": 68,
     "volume_24h": null,
     "fees_24h": null,
     "revenue_24h": null
@@ -402,7 +402,7 @@
     "mcap_tvl": 5387,
     "volume_30d": 5387,
     "fees_30d": 374,
-    "revenue_30d": 376,
+    "revenue_30d": 374,
     "volume_24h": null,
     "fees_24h": null,
     "revenue_24h": null
@@ -1388,7 +1388,7 @@
     "mcap_tvl": 5380,
     "volume_30d": 5380,
     "fees_30d": 129,
-    "revenue_30d": 122,
+    "revenue_30d": 137,
     "volume_24h": null,
     "fees_24h": null,
     "revenue_24h": null
@@ -1405,7 +1405,7 @@
     "mcap_tvl": 433662,
     "volume_30d": 433662,
     "fees_30d": 20086,
-    "revenue_30d": 19909,
+    "revenue_30d": 19793,
     "volume_24h": null,
     "fees_24h": null,
     "revenue_24h": null
@@ -1439,7 +1439,7 @@
     "mcap_tvl": 13650,
     "volume_30d": 13650,
     "fees_30d": 285,
-    "revenue_30d": 291,
+    "revenue_30d": 285,
     "volume_24h": null,
     "fees_24h": null,
     "revenue_24h": null

@@ -869,7 +869,7 @@
   {
     "rank": null,
     "name": "Signals",
-    "logo": "https://icons.llamao.fi/icons/protocols/signals?w=48&h=48",
+    "logo": "/assets/placeholder.png",
     "chains": "1 chain",
     "tvl": 1027,
     "volume_7d": null,

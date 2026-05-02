@@ -699,7 +699,7 @@
   {
     "rank": null,
     "name": "Jackson Protocol",
-    "logo": "/assets/placeholder.png",
+    "logo": "https://icons.llama.fi/jackson-protocol.jpg",
     "chains": "1 chain",
     "tvl": 4220,
     "volume_7d": null,

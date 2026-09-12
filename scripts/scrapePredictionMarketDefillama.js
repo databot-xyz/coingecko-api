@@ -29,133 +29,72 @@ function parseValue(text) {
   return isNaN(num) ? null : num;
 }
 
-async function scrapeDefiLlamaWithMouse(page, retries = 2) {
+async function scrapeDefiLlama(page, retries = 2) {
   const url = BASE_URL;
 
   for (let attempt = 1; attempt <= retries + 1; attempt++) {
     try {
+      // DefiLlama keeps background price/websocket traffic running
+      // permanently, so "networkidle2" never resolves and just burns the
+      // full timeout on every attempt. Wait for DOM content instead, then
+      // gate real readiness on the table actually having rows.
       await page.goto(url, {
-        waitUntil: "networkidle2",
+        waitUntil: "domcontentloaded",
         timeout: 60000,
       });
 
-      await sleep(3000);
+      await page.waitForSelector("table tbody tr td a[href^='/protocol/']", {
+        timeout: 30000,
+      });
+      await sleep(1000);
 
-      await page.waitForSelector("#table-wrapper", { timeout: 30000 });
+      // The rankings table now renders every row up front as a plain
+      // <table> (no virtualization), so a single pass over tbody rows
+      // captures everything — no scroll/keyboard simulation needed.
+      const raw = await page.evaluate(() => {
+        const rows = Array.from(document.querySelectorAll("table tbody tr"));
 
-      await page.click("#table-wrapper");
-      await sleep(500);
+        return rows
+          .map((row) => {
+            const cells = Array.from(row.querySelectorAll("td"));
+            const nameCell = cells[0];
+            const nameLink = nameCell
+              ? nameCell.querySelector('a[href^="/protocol/"]')
+              : null;
+            if (!nameLink) return null;
 
-      const allProtocols = new Map();
-      const totalPresses = 150;
+            const img = nameCell.querySelector("img");
+            const nameWrapper = nameLink.closest("span");
+            const chainsSpan = nameWrapper
+              ? nameWrapper.nextElementSibling
+              : null;
 
-      for (let i = 0; i < totalPresses; i++) {
-        await page.keyboard.press("ArrowDown");
-        await sleep(100);
-
-        if (i % 5 === 0) {
-          const protocols = await page.evaluate(() => {
-            const results = [];
-            const wrapper = document.querySelector("#table-wrapper");
-            if (!wrapper) return results;
-
-            const rows = Array.from(
-              wrapper.querySelectorAll('div[style*="position: absolute"]')
-            ).filter(
-              (el) =>
-                el.style.transform && el.style.transform.includes("translateY")
-            );
-
-            rows.forEach((row) => {
-              try {
-                const cells = Array.from(
-                  row.querySelectorAll('div[data-chainpage="true"]')
-                );
-                if (cells.length < 2) return;
-
-                const protocol = {
-                  rank: null,
-                  name: null,
-                  logo: null,
-                  chains: null,
-                  tvl: null,
-                  volume_7d: null,
-                  fees_7d: null,
-                  revenue_7d: null,
-                  mcap_tvl: null,
-                  volume_30d: null,
-                  fees_30d: null,
-                  revenue_30d: null,
-                  volume_24h: null,
-                  fees_24h: null,
-                  revenue_24h: null,
-                };
-
-                const nameCell = cells[0];
-                if (nameCell) {
-                  const rankSpan = nameCell.querySelector("span.shrink-0");
-                  if (rankSpan) {
-                    protocol.rank =
-                      parseInt(rankSpan.textContent.trim()) || null;
-                  }
-
-                  const img = nameCell.querySelector("img");
-                  if (img) {
-                    protocol.logo = img.getAttribute("src");
-                  }
-
-                  const nameLink = nameCell.querySelector("a.text-sm");
-                  if (nameLink) {
-                    protocol.name = nameLink.textContent.trim();
-                  }
-
-                  const chainsSpan = nameCell.querySelector(
-                    'span[class*="text-[0.7rem]"]'
-                  );
-                  if (chainsSpan) {
-                    protocol.chains = chainsSpan.textContent.trim();
-                  }
-                }
-
-                if (cells[1]) protocol.tvl = cells[1].textContent.trim();
-                if (cells[2]) protocol.volume_7d = cells[2].textContent.trim();
-                if (cells[3]) protocol.fees_7d = cells[3].textContent.trim();
-                if (cells[4]) protocol.revenue_7d = cells[4].textContent.trim();
-                if (cells[5]) protocol.mcap_tvl = cells[5].textContent.trim();
-                if (cells[6]) protocol.volume_30d = cells[6].textContent.trim();
-                if (cells[7]) protocol.fees_30d = cells[7].textContent.trim();
-                if (cells[8])
-                  protocol.revenue_30d = cells[8].textContent.trim();
-                if (cells[9]) protocol.volume_24h = cells[9].textContent.trim();
-                if (cells[10]) protocol.fees_24h = cells[10].textContent.trim();
-                if (cells[11])
-                  protocol.revenue_24h = cells[11].textContent.trim();
-
-                results.push(protocol);
-              } catch (err) {
-                // Skip
-              }
-            });
-
-            return results;
-          });
-
-          protocols.forEach((p) => {
-            if (p.name) {
-              allProtocols.set(p.name, p);
-            }
-          });
-        }
-      }
-
-      const protocols = Array.from(allProtocols.values()).sort((a, b) => {
-        if (a.rank === null) return 1;
-        if (b.rank === null) return -1;
-        return a.rank - b.rank;
+            return {
+              name: nameLink.textContent.trim(),
+              logo: img ? img.getAttribute("src") : null,
+              chains: chainsSpan ? chainsSpan.textContent.trim() : null,
+              tvl: cells[1] ? cells[1].textContent.trim() : null,
+              volume_7d: cells[2] ? cells[2].textContent.trim() : null,
+              fees_7d: cells[3] ? cells[3].textContent.trim() : null,
+              revenue_7d: cells[4] ? cells[4].textContent.trim() : null,
+              mcap_tvl: cells[5] ? cells[5].textContent.trim() : null,
+              volume_30d: cells[6] ? cells[6].textContent.trim() : null,
+              fees_30d: cells[7] ? cells[7].textContent.trim() : null,
+              revenue_30d: cells[8] ? cells[8].textContent.trim() : null,
+              volume_24h: cells[9] ? cells[9].textContent.trim() : null,
+              fees_24h: cells[10] ? cells[10].textContent.trim() : null,
+              revenue_24h: cells[11] ? cells[11].textContent.trim() : null,
+            };
+          })
+          .filter(Boolean);
       });
 
-      const parsedProtocols = protocols.map((p) => ({
-        ...p,
+      // Table rows are already in rank order top to bottom.
+      const parsedProtocols = raw.map((p, i) => ({
+        rank: i + 1,
+        name: p.name,
+        logo: p.logo,
+        chains: p.chains,
         tvl: parseValue(p.tvl),
         volume_7d: parseValue(p.volume_7d),
         fees_7d: parseValue(p.fees_7d),
@@ -218,7 +157,7 @@ async function createPage(browser) {
     browser = await createBrowser();
     const page = await createPage(browser);
 
-    const protocols = await scrapeDefiLlamaWithMouse(page);
+    const protocols = await scrapeDefiLlama(page);
 
     await browser.close();
 

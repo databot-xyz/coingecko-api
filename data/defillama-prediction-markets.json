@@ -21,7 +21,7 @@
     "name": "Polymarket",
     "logo": "https://icons.llamao.fi/icons/protocols/polymarket?w=48&h=48",
     "chains": "2 chains",
-    "tvl": 368880000,
+    "tvl": 372550000,
     "volume_7d": 1126000000,
     "fees_7d": 21470000,
     "revenue_7d": 3870000,
@@ -30,15 +30,15 @@
     "fees_30d": 72470000,
     "revenue_30d": 16100000.000000002,
     "volume_24h": 148280000,
-    "fees_24h": 2650000,
-    "revenue_24h": 359850
+    "fees_24h": 2640000,
+    "revenue_24h": 351593
   },
   {
     "rank": 3,
     "name": "Predict Fun",
     "logo": "https://icons.llamao.fi/icons/protocols/predict-fun?w=48&h=48",
     "chains": "2 chains",
-    "tvl": 12340000,
+    "tvl": 12580000,
     "volume_7d": 68670000,
     "fees_7d": 1290000,
     "revenue_7d": 277661,
@@ -46,26 +46,26 @@
     "volume_30d": 274170000,
     "fees_30d": 4720000,
     "revenue_30d": 951812,
-    "volume_24h": 9500000,
-    "fees_24h": 174622,
-    "revenue_24h": 37381
+    "volume_24h": 9560000,
+    "fees_24h": 177549,
+    "revenue_24h": 38239
   },
   {
     "rank": 4,
     "name": "OPINION",
     "logo": "https://icons.llamao.fi/icons/protocols/opinion?w=48&h=48",
     "chains": "1 chain",
-    "tvl": 3440000,
+    "tvl": 3450000,
     "volume_7d": 66239999.99999999,
     "fees_7d": 10256,
     "revenue_7d": 10252,
-    "mcap_tvl": 2.28,
+    "mcap_tvl": 2.25,
     "volume_30d": 334210000,
     "fees_30d": 44933,
     "revenue_30d": 44918,
-    "volume_24h": 9550000,
-    "fees_24h": 1075,
-    "revenue_24h": 1075
+    "volume_24h": 9570000,
+    "fees_24h": 1070,
+    "revenue_24h": 1070
   },
   {
     "rank": 5,
@@ -80,9 +80,9 @@
     "volume_30d": 54680000,
     "fees_30d": 1000000,
     "revenue_30d": 1000000,
-    "volume_24h": 6743,
-    "fees_24h": 92.67,
-    "revenue_24h": 92.67
+    "volume_24h": 6648,
+    "fees_24h": 90.5,
+    "revenue_24h": 90.5
   },
   {
     "rank": 6,
@@ -157,34 +157,34 @@
     "name": "Limitless Exchange",
     "logo": "https://icons.llamao.fi/icons/protocols/limitless-exchange?w=48&h=48",
     "chains": "1 chain",
-    "tvl": 374761.36,
+    "tvl": 376852.36,
     "volume_7d": 4000000,
     "fees_7d": 81755,
     "revenue_7d": 4485.1,
-    "mcap_tvl": 15.23,
+    "mcap_tvl": 15.16,
     "volume_30d": 13780000,
     "fees_30d": 248013,
     "revenue_30d": 20296.09,
-    "volume_24h": 437608,
+    "volume_24h": 392174,
     "fees_24h": 13761,
-    "revenue_24h": 1962
+    "revenue_24h": 6634
   },
   {
     "rank": 11,
     "name": "Overtime",
     "logo": "https://icons.llamao.fi/icons/protocols/overtime?w=48&h=48",
     "chains": "6 chains",
-    "tvl": 1000000,
+    "tvl": 1010000,
     "volume_7d": 2160000,
     "fees_7d": 21760,
     "revenue_7d": 21760,
-    "mcap_tvl": 11.89,
+    "mcap_tvl": 11.83,
     "volume_30d": 7930000,
     "fees_30d": 99133,
     "revenue_30d": 99133,
-    "volume_24h": 234120,
-    "fees_24h": 1974,
-    "revenue_24h": 1974
+    "volume_24h": 229318,
+    "fees_24h": 1995,
+    "revenue_24h": 1995
   },
   {
     "rank": 12,
@@ -199,8 +199,8 @@
     "volume_30d": 7420000,
     "fees_30d": 222139,
     "revenue_30d": 222139,
-    "volume_24h": 245064,
-    "fees_24h": 7385,
-    "revenue_24h": 7385
+    "volume_24h": 248949,
+    "fees_24h": 7447,
+    "revenue_24h": 7447
   }
 ]

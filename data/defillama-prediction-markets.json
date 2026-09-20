@@ -29,7 +29,7 @@
     "volume_30d": 4184999999.9999995,
     "fees_30d": 76420000,
     "revenue_30d": 16290000,
-    "volume_24h": 205810000,
+    "volume_24h": 205800000,
     "fees_24h": 3680000,
     "revenue_24h": 404278
   },
@@ -38,7 +38,7 @@
     "name": "Predict Fun",
     "logo": "https://icons.llamao.fi/icons/protocols/predict-fun?w=48&h=48",
     "chains": "2 chains",
-    "tvl": 10740000,
+    "tvl": 11070000,
     "volume_7d": 67660000,
     "fees_7d": 1300000,
     "revenue_7d": 286561,
@@ -47,8 +47,8 @@
     "fees_30d": 5090000,
     "revenue_30d": 1030000,
     "volume_24h": 10580000,
-    "fees_24h": 210553,
-    "revenue_24h": 47806
+    "fees_24h": 207011,
+    "revenue_24h": 45181
   },
   {
     "rank": 4,
@@ -59,13 +59,13 @@
     "volume_7d": 55030000,
     "fees_7d": 9030,
     "revenue_7d": 9029,
-    "mcap_tvl": 2.52,
+    "mcap_tvl": 2.54,
     "volume_30d": 324320000,
     "fees_30d": 43121,
     "revenue_30d": 43106,
-    "volume_24h": 9740000,
-    "fees_24h": 1417,
-    "revenue_24h": 1416
+    "volume_24h": 10390000,
+    "fees_24h": 1377,
+    "revenue_24h": 1376
   },
   {
     "rank": 5,
@@ -97,7 +97,7 @@
     "volume_30d": 55300000,
     "fees_30d": 1010000,
     "revenue_30d": 1010000,
-    "volume_24h": 4440000,
+    "volume_24h": 4740000,
     "fees_24h": 131916,
     "revenue_24h": 131916
   },
@@ -148,7 +148,7 @@
     "volume_30d": 19540000,
     "fees_30d": 8997.33,
     "revenue_30d": 8983.07,
-    "volume_24h": 20909,
+    "volume_24h": 11772,
     "fees_24h": 140,
     "revenue_24h": 139
   },
@@ -178,11 +178,11 @@
     "volume_7d": 2480000,
     "fees_7d": 58477,
     "revenue_7d": 3400,
-    "mcap_tvl": 16.86,
+    "mcap_tvl": 16.9,
     "volume_30d": 13370000,
     "fees_30d": 226167,
     "revenue_30d": 11613.1,
-    "volume_24h": 499089,
+    "volume_24h": 499978,
     "fees_24h": 3473,
     "revenue_24h": 2945
   },
@@ -191,16 +191,16 @@
     "name": "Overtime",
     "logo": "https://icons.llamao.fi/icons/protocols/overtime?w=48&h=48",
     "chains": "6 chains",
-    "tvl": 1160000,
+    "tvl": 1120000,
     "volume_7d": 1950000,
     "fees_7d": 19457,
     "revenue_7d": 19457,
-    "mcap_tvl": 10.01,
+    "mcap_tvl": 10.34,
     "volume_30d": 8100000,
     "fees_30d": 90248,
     "revenue_30d": 90248,
-    "volume_24h": 401919,
-    "fees_24h": 3253,
-    "revenue_24h": 3253
+    "volume_24h": 404838,
+    "fees_24h": 3355,
+    "revenue_24h": 3355
   }
 ]

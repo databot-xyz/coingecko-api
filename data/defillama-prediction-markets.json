@@ -21,7 +21,7 @@
     "name": "Polymarket",
     "logo": "https://icons.llamao.fi/icons/protocols/polymarket?w=48&h=48",
     "chains": "2 chains",
-    "tvl": 352830000,
+    "tvl": 354180000,
     "volume_7d": 1183000000,
     "fees_7d": 22050000,
     "revenue_7d": 2780000,
@@ -29,7 +29,7 @@
     "volume_30d": 4355000000,
     "fees_30d": 80130000,
     "revenue_30d": 15050000,
-    "volume_24h": 146080000,
+    "volume_24h": 146070000,
     "fees_24h": 2580000,
     "revenue_24h": 315728
   },
@@ -46,7 +46,7 @@
     "volume_30d": 299160000,
     "fees_30d": 5410000,
     "revenue_30d": 1100000,
-    "volume_24h": 10330000,
+    "volume_24h": 10300000,
     "fees_24h": 210718,
     "revenue_24h": 46895
   },
@@ -59,7 +59,7 @@
     "volume_7d": 61040000,
     "fees_7d": 10483,
     "revenue_7d": 10480,
-    "mcap_tvl": 2.78,
+    "mcap_tvl": 2.76,
     "volume_30d": 302880000,
     "fees_30d": 43223,
     "revenue_30d": 43207,
@@ -80,9 +80,9 @@
     "volume_30d": 70350000,
     "fees_30d": 1390000,
     "revenue_30d": 1390000,
-    "volume_24h": 953480,
-    "fees_24h": 23318,
-    "revenue_24h": 23318
+    "volume_24h": 801959,
+    "fees_24h": 19452,
+    "revenue_24h": 19452
   },
   {
     "rank": 6,
@@ -149,8 +149,8 @@
     "fees_30d": 8658.3,
     "revenue_30d": 8642.81,
     "volume_24h": 1280000,
-    "fees_24h": 54.98,
-    "revenue_24h": 53.93
+    "fees_24h": 46.96,
+    "revenue_24h": 45.91
   },
   {
     "rank": 10,
@@ -178,7 +178,7 @@
     "volume_7d": 1950000,
     "fees_7d": 35578,
     "revenue_7d": 1497,
-    "mcap_tvl": 15.32,
+    "mcap_tvl": 15.35,
     "volume_30d": 11910000,
     "fees_30d": 211936,
     "revenue_30d": 32394.1,
@@ -200,7 +200,7 @@
     "fees_30d": 224567,
     "revenue_30d": 224567,
     "volume_24h": 262590,
-    "fees_24h": 7857,
-    "revenue_24h": 7857
+    "fees_24h": 8150,
+    "revenue_24h": 8150
   }
 ]

@@ -21,7 +21,7 @@
     "name": "Polymarket",
     "logo": "https://icons.llamao.fi/icons/protocols/polymarket?w=48&h=48",
     "chains": "2 chains",
-    "tvl": 357530000,
+    "tvl": 353500000,
     "volume_7d": 1290000000,
     "fees_7d": 29040000,
     "revenue_7d": 4139999.9999999995,
@@ -29,16 +29,16 @@
     "volume_30d": 5200000000,
     "fees_30d": 112700000,
     "revenue_30d": 14730000,
-    "volume_24h": 146760000,
+    "volume_24h": 146640000,
     "fees_24h": 2940000,
-    "revenue_24h": 429688
+    "revenue_24h": 430266
   },
   {
     "rank": 3,
     "name": "Predict Fun",
     "logo": "https://icons.llamao.fi/icons/protocols/predict-fun?w=48&h=48",
     "chains": "2 chains",
-    "tvl": 11990000,
+    "tvl": 11050000,
     "volume_7d": 95510000,
     "fees_7d": 1930000,
     "revenue_7d": 459912,
@@ -46,9 +46,9 @@
     "volume_30d": 334860000,
     "fees_30d": 6640000,
     "revenue_30d": 1530000,
-    "volume_24h": 13420000,
-    "fees_24h": 279556,
-    "revenue_24h": 63969
+    "volume_24h": 13440000,
+    "fees_24h": 273482,
+    "revenue_24h": 65956
   },
   {
     "rank": 4,
@@ -59,13 +59,13 @@
     "volume_7d": 60620000,
     "fees_7d": 10985,
     "revenue_7d": 10984,
-    "mcap_tvl": 3.54,
+    "mcap_tvl": 3.5,
     "volume_30d": 278150000,
     "fees_30d": 42852,
     "revenue_30d": 42846,
-    "volume_24h": 11410000,
-    "fees_24h": 1317,
-    "revenue_24h": 1317
+    "volume_24h": 9540000,
+    "fees_24h": 1270,
+    "revenue_24h": 1270
   },
   {
     "rank": 5,
@@ -80,9 +80,9 @@
     "volume_30d": 30220000,
     "fees_30d": 41597,
     "revenue_30d": 41597,
-    "volume_24h": 2530000,
-    "fees_24h": 3306,
-    "revenue_24h": 3306
+    "volume_24h": 2390000,
+    "fees_24h": 3657,
+    "revenue_24h": 3657
   },
   {
     "rank": 6,
@@ -132,8 +132,8 @@
     "fees_30d": 10454,
     "revenue_30d": 10421,
     "volume_24h": 2400000,
-    "fees_24h": 31.95,
-    "revenue_24h": 31.83
+    "fees_24h": 31.27,
+    "revenue_24h": 31.19
   },
   {
     "rank": 9,
@@ -178,13 +178,13 @@
     "volume_7d": 2029999.9999999998,
     "fees_7d": 66190,
     "revenue_7d": 65797,
-    "mcap_tvl": 8.06,
+    "mcap_tvl": 8.04,
     "volume_30d": 7650000,
     "fees_30d": 297460,
     "revenue_30d": 296324,
-    "volume_24h": 297554,
-    "fees_24h": 30227,
-    "revenue_24h": 30190
+    "volume_24h": 292077,
+    "fees_24h": 31535,
+    "revenue_24h": 31499
   },
   {
     "rank": 12,
@@ -199,8 +199,8 @@
     "volume_30d": 7970000,
     "fees_30d": 238479,
     "revenue_30d": 238479,
-    "volume_24h": 265236,
-    "fees_24h": 7956,
-    "revenue_24h": 7956
+    "volume_24h": 285745,
+    "fees_24h": 8343,
+    "revenue_24h": 8343
   }
 ]

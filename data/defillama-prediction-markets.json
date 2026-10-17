@@ -21,7 +21,7 @@
     "name": "Polymarket",
     "logo": "https://icons.llamao.fi/icons/protocols/polymarket?w=48&h=48",
     "chains": "2 chains",
-    "tvl": 367720000,
+    "tvl": 367110000,
     "volume_7d": 1276000000,
     "fees_7d": 28830000,
     "revenue_7d": 4019999.9999999995,
@@ -29,16 +29,16 @@
     "volume_30d": 5222000000,
     "fees_30d": 113710000,
     "revenue_30d": 14740000,
-    "volume_24h": 153720000,
-    "fees_24h": 3570000,
-    "revenue_24h": 801599
+    "volume_24h": 153810000,
+    "fees_24h": 3680000,
+    "revenue_24h": 912250
   },
   {
     "rank": 3,
     "name": "Predict Fun",
     "logo": "https://icons.llamao.fi/icons/protocols/predict-fun?w=48&h=48",
     "chains": "2 chains",
-    "tvl": 12450000,
+    "tvl": 11930000,
     "volume_7d": 98160000,
     "fees_7d": 1990000,
     "revenue_7d": 479204,
@@ -46,9 +46,9 @@
     "volume_30d": 338840000,
     "fees_30d": 6730000,
     "revenue_30d": 1560000,
-    "volume_24h": 16020000,
-    "fees_24h": 313233,
-    "revenue_24h": 85004
+    "volume_24h": 16730000,
+    "fees_24h": 330128,
+    "revenue_24h": 92997
   },
   {
     "rank": 4,
@@ -59,7 +59,7 @@
     "volume_7d": 59300000,
     "fees_7d": 10662,
     "revenue_7d": 10661,
-    "mcap_tvl": 3.12,
+    "mcap_tvl": 3.1,
     "volume_30d": 277190000,
     "fees_30d": 42942,
     "revenue_30d": 42936,
@@ -80,9 +80,9 @@
     "volume_30d": 32500000,
     "fees_30d": 45270,
     "revenue_30d": 45270,
-    "volume_24h": 5570000,
-    "fees_24h": 5825,
-    "revenue_24h": 5825
+    "volume_24h": 6080000,
+    "fees_24h": 8886,
+    "revenue_24h": 8886
   },
   {
     "rank": 6,
@@ -131,9 +131,9 @@
     "volume_30d": 51230000,
     "fees_30d": 10440,
     "revenue_30d": 10407,
-    "volume_24h": 2330000,
-    "fees_24h": 41.82,
-    "revenue_24h": 41.73
+    "volume_24h": 2310000,
+    "fees_24h": 46.01,
+    "revenue_24h": 44.99
   },
   {
     "rank": 9,
@@ -157,7 +157,7 @@
     "name": "world",
     "logo": "https://icons.llamao.fi/icons/protocols/world?w=48&h=48",
     "chains": "1 chain",
-    "tvl": 220501,
+    "tvl": 209169,
     "volume_7d": 3050000,
     "fees_7d": 0,
     "revenue_7d": 0,
@@ -182,9 +182,9 @@
     "volume_30d": 7700000,
     "fees_30d": 333064,
     "revenue_30d": 331935,
-    "volume_24h": 307883,
-    "fees_24h": 28504,
-    "revenue_24h": 28468
+    "volume_24h": 329947,
+    "fees_24h": 29464,
+    "revenue_24h": 29422
   },
   {
     "rank": 12,
@@ -199,8 +199,8 @@
     "volume_30d": 8010000,
     "fees_30d": 239631,
     "revenue_30d": 239631,
-    "volume_24h": 341305,
-    "fees_24h": 10162,
-    "revenue_24h": 10162
+    "volume_24h": 343968,
+    "fees_24h": 10127,
+    "revenue_24h": 10127
   }
 ]

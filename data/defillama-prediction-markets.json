@@ -21,7 +21,7 @@
     "name": "Polymarket",
     "logo": "https://icons.llamao.fi/icons/protocols/polymarket?w=48&h=48",
     "chains": "2 chains",
-    "tvl": 382650000,
+    "tvl": 375550000,
     "volume_7d": 1329000000,
     "fees_7d": 26870000,
     "revenue_7d": 4080000,
@@ -29,16 +29,16 @@
     "volume_30d": 5460000000,
     "fees_30d": 118180000,
     "revenue_30d": 16020000,
-    "volume_24h": 254280000,
-    "fees_24h": 5200000,
-    "revenue_24h": 946772
+    "volume_24h": 254270000,
+    "fees_24h": 5220000,
+    "revenue_24h": 962847
   },
   {
     "rank": 3,
     "name": "Predict Fun",
     "logo": "https://icons.llamao.fi/icons/protocols/predict-fun?w=48&h=48",
     "chains": "2 chains",
-    "tvl": 11950000,
+    "tvl": 12060000,
     "volume_7d": 105650000,
     "fees_7d": 2110000,
     "revenue_7d": 549845,
@@ -46,26 +46,26 @@
     "volume_30d": 380360000,
     "fees_30d": 7580000,
     "revenue_30d": 1870000,
-    "volume_24h": 19910000,
-    "fees_24h": 401110,
-    "revenue_24h": 118346
+    "volume_24h": 19780000,
+    "fees_24h": 395602,
+    "revenue_24h": 117156
   },
   {
     "rank": 4,
     "name": "OPINION",
     "logo": "https://icons.llamao.fi/icons/protocols/opinion?w=48&h=48",
     "chains": "1 chain",
-    "tvl": 3040000,
+    "tvl": 3050000,
     "volume_7d": 52350000,
     "fees_7d": 7806,
     "revenue_7d": 7806,
-    "mcap_tvl": 3.02,
+    "mcap_tvl": 3.01,
     "volume_30d": 267310000,
     "fees_30d": 40395,
     "revenue_30d": 40392,
-    "volume_24h": 7000000,
-    "fees_24h": 542,
-    "revenue_24h": 542
+    "volume_24h": 7560000,
+    "fees_24h": 916,
+    "revenue_24h": 916
   },
   {
     "rank": 5,
@@ -80,9 +80,9 @@
     "volume_30d": 73020000,
     "fees_30d": 106464,
     "revenue_30d": 106464,
-    "volume_24h": 8940000,
-    "fees_24h": 14128,
-    "revenue_24h": 14128
+    "volume_24h": 8980000,
+    "fees_24h": 15582,
+    "revenue_24h": 15582
   },
   {
     "rank": 6,

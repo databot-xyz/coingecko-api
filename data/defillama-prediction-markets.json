@@ -21,7 +21,7 @@
     "name": "Polymarket",
     "logo": "https://icons.llamao.fi/icons/protocols/polymarket?w=48&h=48",
     "chains": "2 chains",
-    "tvl": 312500000,
+    "tvl": 316830000,
     "volume_7d": 1335000000,
     "fees_7d": 31310000,
     "revenue_7d": 4750000,
@@ -29,9 +29,9 @@
     "volume_30d": 5952000000,
     "fees_30d": 134460000,
     "revenue_30d": 18650000,
-    "volume_24h": 154350000,
-    "fees_24h": 3470000,
-    "revenue_24h": 577006
+    "volume_24h": 154180000,
+    "fees_24h": 3420000,
+    "revenue_24h": 527873
   },
   {
     "rank": 3,
@@ -46,7 +46,7 @@
     "volume_30d": 284550000,
     "fees_30d": 0,
     "revenue_30d": 0,
-    "volume_24h": 14880000,
+    "volume_24h": 14700000,
     "fees_24h": 0,
     "revenue_24h": 0
   },
@@ -55,7 +55,7 @@
     "name": "Predict Fun",
     "logo": "https://icons.llamao.fi/icons/protocols/predict-fun?w=48&h=48",
     "chains": "2 chains",
-    "tvl": 9420000,
+    "tvl": 9630000,
     "volume_7d": 88220000,
     "fees_7d": 1790000,
     "revenue_7d": 446671,
@@ -63,9 +63,9 @@
     "volume_30d": 388690000,
     "fees_30d": 7790000,
     "revenue_30d": 2049999.9999999998,
-    "volume_24h": 12480000,
-    "fees_24h": 125216,
-    "revenue_24h": 59558
+    "volume_24h": 11590000,
+    "fees_24h": 118505,
+    "revenue_24h": 55624
   },
   {
     "rank": 5,
@@ -93,13 +93,13 @@
     "volume_7d": 44480000,
     "fees_7d": 7388,
     "revenue_7d": 7388,
-    "mcap_tvl": 2.16,
+    "mcap_tvl": 2.14,
     "volume_30d": 203560000,
     "fees_30d": 32663,
     "revenue_30d": 32661,
     "volume_24h": 9120000,
-    "fees_24h": 1491,
-    "revenue_24h": 1491
+    "fees_24h": 1406,
+    "revenue_24h": 1406
   },
   {
     "rank": 7,
@@ -114,9 +114,9 @@
     "volume_30d": 95570000,
     "fees_30d": 3203,
     "revenue_30d": 3166,
-    "volume_24h": 3530000,
-    "fees_24h": 110,
-    "revenue_24h": 110
+    "volume_24h": 3510000,
+    "fees_24h": 55.36,
+    "revenue_24h": 55.36
   },
   {
     "rank": 8,
@@ -131,9 +131,9 @@
     "volume_30d": 135980000,
     "fees_30d": 222084,
     "revenue_30d": 222084,
-    "volume_24h": 3100000,
-    "fees_24h": 7035,
-    "revenue_24h": 7035
+    "volume_24h": 2390000,
+    "fees_24h": 6821,
+    "revenue_24h": 6821
   },
   {
     "rank": 9,
